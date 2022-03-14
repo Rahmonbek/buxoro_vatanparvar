@@ -10,12 +10,10 @@ import { useTranslation } from 'react-i18next';
 import http from "../ui/Services";
 import logo from '../home/assets/logo.gif'
 import {Row, Col, Collapse} from 'antd'
-import { BsBank, BsBuilding, BsPerson } from "react-icons/bs";
+import { BsBuilding, BsPerson } from "react-icons/bs";
 import {  AiOutlineFieldNumber, AiOutlinePhone } from "react-icons/ai";
-import {  GiBanknote } from "react-icons/gi";
 import { MdOutlinePlace } from "react-icons/md";
 import { HiOutlineMailOpen } from "react-icons/hi";
-import { RiBankCard2Line } from "react-icons/ri";
 
 // import BounceLoader from "react-spinners/BounceLoader";
 const { Panel } = Collapse;
@@ -277,7 +275,7 @@ useEffect(()=>{
                               <Panel className={`${index===number?"Active":''} panel`}  style={{zIndex:-1}} key={index} header={
                               <div className={style.headAcc}>
                               <div style={{zIndex:-1}} className="headId">{index+1}</div>
-                              <div style={{zIndex:-1}} className="headName"><BsBuilding color="#133165"/> {t('check')?item.branchName:item.branchNameRu}</div>
+                              <div style={{zIndex:-1}} className="headName"><BsBuilding color="#133165"/> {item.branchName}</div>
                             </div>}>
 <Row>
 <Col className="colAcc" md={12} sm={24}>
@@ -288,15 +286,6 @@ useEffect(()=>{
   </Col>
   <Col className="colAcc" md={12} sm={24}>
   <HiOutlineMailOpen  color="#133165" /> {item.email}
-  </Col>
-  <Col className="colAcc" md={12} sm={24}>
-  <BsBank  color="#133165" /> {item.bankName}
-  </Col>
-  <Col className="colAcc" md={12} sm={24}>
-  <GiBanknote  color="#133165" /> {item.bankAccount}
-  </Col>
-  <Col className="colAcc" md={12} sm={24}>
-  <RiBankCard2Line  color="#133165" /> {item.bankMfo}
   </Col>
   <Col className="colAcc" md={12} sm={24}>
   <MdOutlinePlace  color="#133165" /> {item.branchAdress}
@@ -483,25 +472,13 @@ useEffect(()=>{
                               <Panel className={`${index===number?"Active":''} panel`}  style={{zIndex:-1}} key={index} header={
                               <div className={style.headAcc}>
                               <div style={{zIndex:-1}} className={style.headId}>{index+1}</div>
-                              <div style={{zIndex:-1}} className={style.headName}> {t('check')?item.branchName:item.branchNameRu}</div>
+                              <div style={{zIndex:-1}} className={style.headName}>{item.branchName}</div>
                               <div style={{zIndex:-1}} className={style.headPerson}>{item.branchPresident}</div>
                               <div style={{zIndex:-1}} className={style.headPhone}>{item.phoneNumber}</div>
                               <div style={{zIndex:-1}} className={style.headEmail}>{item.email}</div>
                             </div>}>
-                            <Row>
-<Col className="colAcc" md={12} sm={24}>
-  <BsBank  color="#133165" /> {item.bankName}
-  </Col>
-  <Col className="colAcc" md={12} sm={24}>
-  <GiBanknote  color="#133165" /> {item.bankAccount}
-  </Col>
-  <Col className="colAcc" md={12} sm={24}>
-  <RiBankCard2Line  color="#133165" /> {item.bankMfo}
-  </Col>
-  <Col className="colAcc" md={12} sm={24}>
-  <MdOutlinePlace  color="#133165" /> {item.branchAdress}
-  </Col>
-</Row>
+
+                              <p className={style.Add}> {item.branchAdress}</p>
                             </Panel>
                     
                     ):''

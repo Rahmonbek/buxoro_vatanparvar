@@ -1,28 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import { AppContainer } from "./components/app/AppContainer";
+import "./assets/style.scss";
+import "swiper/css";
+import "swiper/css/pagination";
+import 'antd/dist/antd.css'; 
+import "swiper/css/navigation";
+import "@n3/react-vision-panel/dist/vision-panel.css";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import "./components/ui/i18next";
+//@ts-ignore
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { BrowserRouter } from "react-router-dom";
 
-export default App;
+// import SimpleReactLightbox from "";
+ReactDOM.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <AppContainer />
+    </BrowserRouter>
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+
 @ant-design/icons
 @n3/react-vision-panel
 @testing-library/jest-dom

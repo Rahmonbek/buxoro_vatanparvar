@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { AppContainer } from "./components/app/AppContainer";
 import "./assets/style.scss";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -21,3 +22,4 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+

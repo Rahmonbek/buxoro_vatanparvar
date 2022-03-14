@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { AppContainer } from "./components/app/AppContainer";
 import "./assets/style.scss";
 import "swiper/css";
-import {AppContainer} from './components/app/AppContainer'
 import "swiper/css/pagination";
 import 'antd/dist/antd.css'; 
 import "swiper/css/navigation";
@@ -22,3 +22,4 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+
