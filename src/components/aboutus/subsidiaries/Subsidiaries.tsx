@@ -26,7 +26,7 @@ function Leaders() {
         
     .then((res) => {console.log(res.data); setData(res.data); setTimeout(()=>{
       setLoader(false)
-  }, 2000) })
+  }, 0) })
     .catch(e => console.log(e))
   },[])
   return (
@@ -50,7 +50,7 @@ function Leaders() {
              <div className="content-wrapper">
               <Image  className="img" src={`${urlPer}/${item.photo}`} alt="img" />
               <div className="rahbariyat-list-text">
-                <p  className="rahbariyat-list-text-position">
+                <p  className="rahbariyat-list-text-position" style={{marginTop:"-10px"}}>
                   <b>
                               {t('check')?item.fullNameUz:item.fullNameRu}
                 </b></p>
@@ -58,7 +58,7 @@ function Leaders() {
                 <p  className="rahbariyat-list-text-name">
                 {t('check')?item.positionUz:item.positionRu}
                 </p>
-                <div className="icons" style={{marginTop:'40px'}}>
+                <div className="icons" style={{marginTop:'10px'}}>
                   <FaRegCalendarCheck  className="icon"  size="1.5rem" color="#244BA4" cursor="pointer"/>
                   <p  style={{position:'relative', top:'-14px'}}>{t('check')?item.openDaysUz:item.openDaysRu}</p>
                 </div>
@@ -71,6 +71,10 @@ function Leaders() {
                   <HiOutlineMail className="icon iconn" size="1.5rem" color="#244BA4" cursor="pointer"/>
                   <p  style={{position:'relative', top:'-14px'}}><a href={`mailto: ${item.email}`}>{item.email}</a></p>
                 </div>
+                <div className="web" style={{height:'40px'}}>
+                <MdLanguage className="icon" size="1.5rem" color="#244BA4" cursor="pointer"/>
+                <p    style={{position:'relative', top:'-14px'}}><a href={`https://www.${item.webSite}`}>{item.webSite}</a></p>
+              </div>
               </div>
               </div> 
             </div>

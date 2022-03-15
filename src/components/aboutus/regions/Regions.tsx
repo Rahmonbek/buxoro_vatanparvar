@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { PageTitle } from "../../ui/PageTitle";
-import rRais from "./assets/Kamolov-1M.jpg";
+import rRais from "../subsidiaries/assets/Kamolov-1M.jpg";
 
 import { HiOutlineMail } from "react-icons/hi";
 import { FiPhone } from "react-icons/fi";
@@ -26,7 +26,7 @@ function Leaders() {
         
     .then((res) => {console.log(res.data); setData(res.data); setTimeout(()=>{
       setLoader(false)
-  }, 2000) })
+  }, 0) })
     .catch(e => console.log(e))
   },[])
   return (
@@ -60,7 +60,7 @@ function Leaders() {
                 <p  className="rahbariyat-list-text-name">
                 {t('check')?item.regionName:item.regionNameRu}
                 </p>
-                <div className="icons" style={{marginTop:'10px'}}>
+                <div className="icons" style={{marginTop:'-10px'}}>
                   <FaRegCalendarCheck  className="icon"  size="1.5rem" color="#244BA4" cursor="pointer"/>
                   <p  style={{position:'relative', top:'-14px'}}>{t('check')?item.openDaysUz:item.openDaysRu}</p>
                 </div>

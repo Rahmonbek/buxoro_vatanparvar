@@ -17,7 +17,7 @@ export function Home() {
 const loaderT=()=>{
     setTimeout(()=>{
         setLoader(false)
-    }, 2000)
+    }, 1000)
 }
     return (
         <div onLoad={()=>{loaderT()}}>

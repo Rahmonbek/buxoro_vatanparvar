@@ -10,7 +10,7 @@ function Central() {
   const loaderT=()=>{
       setTimeout(()=>{
           setLoader(false)
-      }, 500)
+      }, 0)
   }
   return (
       <div className="markaziy" onLoad={()=>{loaderT()}}>

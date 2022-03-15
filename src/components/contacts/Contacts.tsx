@@ -10,13 +10,14 @@ import { useTranslation } from 'react-i18next';
 import http from "../ui/Services";
 import logo from '../home/assets/logo.gif'
 import {Row, Col, Collapse} from 'antd'
-import { BsBank, BsBuilding,  BsEnvelope,  BsPerson } from "react-icons/bs";
+import { BsBank, BsBuilding,  BsEnvelope,  BsFillEnvelopeFill,  BsFillTelephoneFill,  BsPerson } from "react-icons/bs";
 import {  AiOutlineFieldNumber, AiOutlinePhone } from "react-icons/ai";
-import {  GiBanknote } from "react-icons/gi";
-import { MdOutlinePlace } from "react-icons/md";
+import {  GiBanknote, GiMailbox, GiReceiveMoney } from "react-icons/gi";
+import { MdFormatListNumbered, MdOutlinePlace } from "react-icons/md";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { RiBankCard2Line, RiBankCardFill, RiBankFill } from "react-icons/ri";
-import { FaMapMarkerAlt, FaRegEnvelope } from "react-icons/fa";
+import { FaBuilding, FaMapMarkerAlt, FaRegEnvelope } from "react-icons/fa";
+import { ImUserTie } from "react-icons/im";
 
 // import BounceLoader from "react-spinners/BounceLoader";
 const { Panel } = Collapse;
@@ -62,33 +63,33 @@ function Contacts() {
       var a=[]
      
      
-      a.push(res.data.filter((data: any) => data.regionId === 1))
+      a.push(res.data.filter((data: any) => data.regionId === 1735))
       
-      a.push(res.data.filter((data:any) => data.regionId === 2))
+      a.push(res.data.filter((data:any) => data.regionId === 1703))
      
-      a.push(res.data.filter((data:any) => data.regionId === 3))
+      a.push(res.data.filter((data:any) => data.regionId === 1706))
      
-      a.push(res.data.filter((data:any) => data.regionId === 4))
+      a.push(res.data.filter((data:any) => data.regionId === 1708))
      
-      a.push(res.data.filter((data:any) => data.regionId === 5))
+      a.push(res.data.filter((data:any) => data.regionId === 1710))
      
-      a.push(res.data.filter((data:any) => data.regionId === 6))
+      a.push(res.data.filter((data:any) => data.regionId === 1712))
      
-      a.push(res.data.filter((data:any) => data.regionId === 7))
+      a.push(res.data.filter((data:any) => data.regionId === 1714))
       
-      a.push(res.data.filter((data:any) => data.regionId === 8))
+      a.push(res.data.filter((data:any) => data.regionId === 1718))
      
-      a.push(res.data.filter((data:any) => data.regionId === 9))
+      a.push(res.data.filter((data:any) => data.regionId === 1722))
      
-      a.push(res.data.filter((data:any) => data.regionId === 10))
+      a.push(res.data.filter((data:any) => data.regionId === 1724))
       
-      a.push(res.data.filter((data:any) => data.regionId === 11))
+      a.push(res.data.filter((data:any) => data.regionId === 1727))
      
-      a.push(res.data.filter((data:any) => data.regionId === 12))
+      a.push(res.data.filter((data:any) => data.regionId === 1730))
      
-      a.push(res.data.filter((data:any) => data.regionId === 13))
+      a.push(res.data.filter((data:any) => data.regionId === 1733))
      
-      a.push(res.data.filter((data:any) => data.regionId === 14))
+      a.push(res.data.filter((data:any) => data.regionId === 1726))
 
       setData(a)
      console.log(a)
@@ -272,7 +273,7 @@ useEffect(()=>{
           </Swiper>
         </div>
         <div className="sal">
-                      <Collapse onChange={callback} defaultActiveKey={[data.length !== 0 ?data[index - 1][0].id:0]} accordion>
+                      <Collapse onChange={callback} accordion>
                           {
                               data.length !== 0 ? data[index - 1].map((item: any, key: any) =>
                                   
@@ -282,27 +283,39 @@ useEffect(()=>{
                               <div style={{zIndex:-1}} className="headName"><BsBuilding color="#133165"/> {t('check')?item.branchName:item.branchNameRu}</div>
                             </div>}>
 <Row>
-<Col className="colAcc" md={12} sm={24}>
-  <BsPerson size='1.3rem'  color="#133165" /><span className="salomText"> {item.branchPresident}</span>
+<Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
+  <BsPerson size='1.3rem'  color="#133165" /><span className="salomText"> {item.ranchPresident===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.ranchPresident}</span>
   </Col>
-  <Col className="colAcc" md={12} sm={24}>
-  <AiOutlinePhone size='1.3rem'  color="#133165" /><span className="salomText"> {item.phoneNumber}</span>
+  <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
+  <AiOutlinePhone size='1.3rem'  color="#133165" /><span className="salomText"> {item.phoneNumber===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.phoneNumber}</span>
   </Col>
-  <Col className="colAcc" md={12} sm={24}>
-  <HiOutlineMailOpen size='1.3rem'  color="#133165" /><span className="salomText"> {item.email}</span>
+  <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
+  <HiOutlineMailOpen size='1.3rem'  color="#133165" /><span className="salomText"> {item.email==="null"?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.email}</span>
   </Col>
-  <Col className="colAcc" md={12} sm={24}>
-  <RiBankFill size='1.3rem'  color="#133165" /><span className="salomText"> {item.bankName}</span>
+
+ 
+  <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
+  <RiBankFill  color="#133165" size='1.3rem' /> <span className="salomText">{item.bankName===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.bankName}</span>
   </Col>
-  <Col className="colAcc" md={12} sm={24}>
-  <GiBanknote size='1.3rem'  color="#133165" /><span className="salomText"> {item.bankAccount}</span>
+ 
+  
+  <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
+  <FaMapMarkerAlt  color="#133165" size='1.3rem' />  <span className="salomText">{item.branchAdress===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.branchAdress}</span>
   </Col>
-  <Col className="colAcc" md={12} sm={24}>
-  <RiBankCardFill size='1.3rem'  color="#133165" /><span className="salomText"> {item.bankMfo}</span>
+  <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
+  <RiBankCardFill  color="#133165" size='1.3rem' /> <span className="salomText">{item.bankAccount===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.bankAccount.slice(0, 4)+" "+item.bankAccount.slice(4, 8)+" "+item.bankAccount.slice(8, 12)+" "+item.bankAccount.slice(12, 16)+" "+item.bankAccount.slice(16, 20)} </span>
   </Col>
-  <Col className="colAcc" md={12} sm={24}>
-  <FaMapMarkerAlt size='1.3rem'  color="#133165" /><span className="salomText"> {item.branchAdress}</span>
+  <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
+  <b style={{color:'#133165'}}>INN</b> <span style={{top:'0px'}} className="salomText">{item.bankAccount===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.inn.slice(0, 3)+" "+item.inn.slice(3, 6)+" "+item.inn.slice(6, 9)} </span>
   </Col>
+ 
+  <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
+   <b style={{color:'#133165'}}>MFO</b> <span style={{top:'0px'}} className="salomText">{item.bankMfo===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.bankMfo} </span>
+  </Col>
+  <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
+  <BsFillEnvelopeFill color="#133165" size='1.3rem'/> <span className="salomText">{item.bankAccount===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.mailIndex} </span>
+  </Col>
+  
 </Row>
                              
                             </Panel>
@@ -316,7 +329,7 @@ useEffect(()=>{
         <Row style={{width:'100%'}}>
 <Col style={{padding:'5px'}} lg={6} md={24} sm={24}>
    
-<h1>{t("Viloyatlar")}</h1>
+<h1 style={{fontSize:'25px', paddingTop:'18px'}}>{t("Viloyatlar")}</h1>
   <ul className={style.ulTab}>
   <li>
  <div className="swiper-slide_body">
@@ -454,33 +467,33 @@ useEffect(()=>{
 </Col>
 <Col style={{padding:'5px'}} lg={18} md={24} sm={24}>
    
-<div className="content" style={{zIndex:'434'}}>
+<div className="content">
         <table className="content-table table1" >
-            <thead style={{backgroundColor:'white', height:'65px', zIndex:343}}  className={style.the}>
+            <thead style={{backgroundColor:'white', height:'65px',}}  className={style.the}>
                           <tr>
                          <th className={style.id}>
-                         <AiOutlineFieldNumber size='2rem' color="#133165"/>
+                         <MdFormatListNumbered size='2rem' color="#133165"/>
 
                            </th>    
                 <th className={style.name}>
-                <BsBuilding  size='2rem' color="#133165"/>
+                <FaBuilding  size='2rem' color="#133165"/>
                   </th>
               
-                <th className={style.person}>
-                <BsPerson  size='2rem' color="#133165" />
+                <th className={style.person} style={{paddingLeft:'40px'}}>
+                <ImUserTie  size='2.1rem' color="#133165" />
                 </th>
                
                 <th className={style.phone}>
-                <AiOutlinePhone  size='2rem' color="#133165" />
+                <BsFillTelephoneFill size='2rem' color="#133165" />
                   </th>
                 <th className={style.email}>
-                <BsEnvelope  size='2rem' color="#133165" />
+                <BsFillEnvelopeFill  size='2rem' color="#133165" />
                   </th>
                 
               </tr>   
             </thead></table>
 <div className={style.op}>
-                      <Collapse onChange={callback} defaultActiveKey={[data.length !== 0 ?data[index - 1][0].id:0]} accordion>
+                      <Collapse onChange={callback} accordion>
                           {
                               data.length !== 0 ? data[index - 1].map((item: any, key: any) =>
                                   {
@@ -490,23 +503,33 @@ useEffect(()=>{
                               <div className={style.headAcc}>
                               <div style={{zIndex:-1}} className={style.headId}>{key+1}</div>
                               <div style={{zIndex:-1}} className={style.headName}> {t('check')?item.branchName:item.branchNameRu}</div>
-                              <div style={{zIndex:-1}} className={style.headPerson}>{item.branchPresident}</div>
-                              <div style={{zIndex:-1}} className={style.headPhone}>{item.phoneNumber}</div>
-                              <div style={{zIndex:-1}} className={style.headEmail}>{item.email}</div>
+                              <div style={{zIndex:-1}} className={style.headPerson}>{item.branchPresident===null?"-":item.branchPresident}</div>
+                              <div style={{zIndex:-1}} className={style.headPhone}>{item.phoneNumber===null?"-":item.phoneNumber}</div>
+                              <div style={{zIndex:-1}} className={style.headEmail}>{item.email==="null"?"-":item.email}</div>
                             </div>}>
                             <Row>
 <Col className="colAcc" md={12} sm={24}>
-  <RiBankFill  color="#133165" size='1.4rem' /> <span className="salomText">{item.bankName}</span>
+  <RiBankFill  color="#133165" size='1.4rem' /> <span className="salomText">{item.bankName===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.bankName}</span>
+  </Col>
+ 
+  
+  <Col className="colAcc" md={12} sm={24}>
+  <FaMapMarkerAlt  color="#133165" size='1.4rem' />  <span className="salomText">{item.branchAdress===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.branchAdress}</span>
   </Col>
   <Col className="colAcc" md={12} sm={24}>
-  <GiBanknote  color="#133165" size='1.4rem' />  <span className="salomText">{item.bankAccount}</span>
+  <RiBankCardFill  color="#133165" size='1.4rem' /> <span className="salomText">{item.bankAccount===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.bankAccount.slice(0, 4)+" "+item.bankAccount.slice(4, 8)+" "+item.bankAccount.slice(8, 12)+" "+item.bankAccount.slice(12, 16)+" "+item.bankAccount.slice(16, 20)} </span>
   </Col>
   <Col className="colAcc" md={12} sm={24}>
-  <RiBankCardFill  color="#133165" size='1.4rem' />  <span className="salomText">{item.bankMfo}</span>
+  <b style={{color:'#133165'}}>INN</b> <span style={{top:'0px'}} className="salomText">{item.bankAccount===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.inn.slice(0, 3)+" "+item.inn.slice(3, 6)+" "+item.inn.slice(6, 9)} </span>
+  </Col>
+ 
+  <Col className="colAcc" md={12} sm={24}>
+   <b style={{color:'#133165'}}>MFO</b> <span style={{top:'0px'}} className="salomText">{item.bankMfo===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.bankMfo} </span>
   </Col>
   <Col className="colAcc" md={12} sm={24}>
-  <FaMapMarkerAlt  color="#133165" size='1.4rem' />  <span className="salomText">{item.branchAdress}</span>
+  <BsFillEnvelopeFill color="#133165" size='1.4rem'/> <span className="salomText">{item.bankAccount===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.mailIndex} </span>
   </Col>
+  
 </Row>
                             </Panel>
                     )}

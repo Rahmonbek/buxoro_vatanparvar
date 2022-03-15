@@ -40,18 +40,18 @@ function Location() {
                     </div>    
                     <div className="location-info-document">
                         <HiOutlineDocumentDownload className="icon" size="2.1rem" color="#133165" cursor="pointer"/>
-                        <p>{t("Rekvizitlar")}</p>  
+                        <a href="https://test.vitc.uz/Files/MK.docx" target="_blank">{t("Rekvizitlar")}</a>  
                     </div>     
                     <div className="location-info-social" style={{marginTop:'30px'}}>
-                       <p className="location-info-social-item_item" >
+                       <a target="_blank" href="https://www.facebook.com/Mudofaaga-komaklashuvchi-Vatanparvar-tashkiloti-108212348006242" className="location-info-social-item_item" >
                           <RiFacebookFill size="0.9em" />
-                       </p>
-                       <p className="location-info-social-item_item" >
+                       </a>
+                       <a target="_blank" href="https://www.instagram.com/vatanparvar.tashkiloti/" className="location-info-social-item_item" >
                             <BsInstagram size="0.9em" />
-                        </p>
-                        <p className="location-info-social-item_item" >
+                        </a>
+                        <a target="_blank" href="https://t.me/mudofaavatanparvartashkiloti" className="location-info-social-item_item" >
                             <FaTelegramPlane size="0.9em" />
-                        </p>
+                        </a>
                     </div>      
                 </div>
                 <div className="location-map">

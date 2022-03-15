@@ -41,7 +41,7 @@ useEffect(()=>{
 
 	setData3(res.data.slice(2*length, length*3)); setData4(res.data.slice(3*length, res.data.length));   setTimeout(()=>{
 		setLoader(false)
-	},2000); })
+	},0); })
 	.catch(e => console.log(e))
 }, [])
 

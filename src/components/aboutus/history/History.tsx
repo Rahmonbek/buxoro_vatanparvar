@@ -49,7 +49,7 @@ function History() {
   const loaderT=()=>{
       setTimeout(()=>{
           setLoader(false)
-      }, 500)
+      }, 0)
   }
   return (
     <div className="history" onLoad={()=>{loaderT()}}>

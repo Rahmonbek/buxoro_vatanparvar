@@ -26,7 +26,7 @@ function Leaders() {
         
     .then((res) => {console.log(res.data); setData(res.data); setTimeout(()=>{
       setLoader(false)
-  }, 2000) })
+  }, 0) })
     .catch(e => console.log(e))
   },[])
   return (

@@ -21,7 +21,7 @@ function Cooperation() {
   const loaderT=()=>{
       setTimeout(()=>{
           setLoader(false)
-      }, 500)
+      }, 0)
   }
   return (
     <Image.PreviewGroup>

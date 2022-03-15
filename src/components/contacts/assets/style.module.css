@@ -115,16 +115,16 @@
   .loader img{width:100% !important;box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset !important; border-radius:50% !important; animation-name:logo !important; animation-duration: 2s !important;animation-iteration-count: infinite !important; }
   
   .bef{width:300px !important; border-radius:50% !important; padding:2px !important;}
-  .headAcc{display: flex; width:100%; z-index: 345;}
-  .headAcc div{padding:5px; height:42px; font-size: 16px;}
+  .headAcc{display: flex; width:100%; z-index: 2 !important;}
+  .headAcc div{padding:5px; height:35px; font-size: 16px;}
   .headId{width:5% !important}
-  .headName{width:25% !important}
-  .headPerson{width:30% !important}
-  .headPhone{width:15% !important}
-  .headEmail{width:25% !important}
+  .headName{width:25% !important; overflow-y: hidden;}
+  .headPerson{width:30% !important;  text-align: center;}
+  .headPhone{width:15% !important;  text-align: center;}
+  .headEmail{width:25% !important;  text-align: center; padding-left: 20px !important;}
   .Add{font-size: 16px;  text-align: center;}
  .ant-collapse-header{ display: flex; align-items: center;} 
-
+.ulTab{margin-top:-20px !important}
 .op{width: 100%; overflow-x: auto; overflow-y: hidden;}
 
 

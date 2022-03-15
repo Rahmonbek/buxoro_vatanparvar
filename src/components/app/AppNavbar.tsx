@@ -89,7 +89,7 @@ setisovv(false)
                         <li className="app_nav-list_item with_sublist">
 
                             <p  className={isbiz_haqimizda?"active":''}><a className="app_nav-list_link" href="#">{t('biz_haqimizda')}</a> </p>
-                            <ul className="app_nav-sub_list">
+                            <ul className="app_nav-sub_list"> 
                             <div className='chiz1'></div>
 
                                 <div className='chiz'></div>
@@ -118,7 +118,7 @@ setisovv(false)
                         </li>
                         <li className="app_nav-list_item with_sublist">
                             <p  className={isaxborot_xizmati?"active":''}><a className="app_nav-list_link" href="#">{t('axborot_xizmati')}</a></p>
-                            <ul className="app_nav-sub_list">
+                            <ul className="app_nav-sub_list"> 
                             <div className='chiz1'></div>
 
 <div className='chiz'></div>
@@ -144,7 +144,7 @@ setisovv(false)
                         </li>
                         <li className="app_nav-list_item with_sublist">
                             <p  className={ismurojat_qilish?"active":''}><a className="app_nav-list_link" href="#">{t('murojat_qilish')}</a></p>
-                            <ul className="app_nav-sub_list">
+                            <ul className="app_nav-sub_list"> 
                             <div className='chiz1'></div>
 
 <div className='chiz'></div>
@@ -176,9 +176,7 @@ setisovv(false)
                     <RiMenu2Line size="2.5em" />
                 </div>
             </div>
-            <Modal show={showVisionPanel}>
-            {showVisionPanel?<button className='butToza'>Tozalash</button>:''}
-            </Modal>
+           
             <SettingsModal show={showVisionPanel} onHide={(e:any) => { console.log(e); setShowVisionPanel(false)}} />
            
            
