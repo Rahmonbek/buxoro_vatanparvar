@@ -1,7 +1,7 @@
 import axios, { AxiosInstance } from "axios";
 //@ts-ignore
 const http: AxiosInstance = axios.create({
-    baseURL: "https://test.vitc.uz",
+    baseURL: process.env.REACT_APP_BASE_URL,
     auth: {
         username: 'vatanparvar',
         password: 'web@#1234'

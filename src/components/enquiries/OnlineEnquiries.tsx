@@ -1,10 +1,14 @@
 import {
   Form,
   Input,
-
+  
+  InputNumber,
+  Cascader,
   Select,
   message,
+  Checkbox,
   Button,
+  AutoComplete,
 } from 'antd';
 import http from "../ui/Services";
 import { useForm } from "react-hook-form";
@@ -14,7 +18,7 @@ import MaskedInput from "antd-mask-input";
 import "./assets/murojat.scss";
 import { QuestionOutlined } from '@ant-design/icons';
 import 'antd/dist/antd.css';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { PageTitle } from "../ui/PageTitle";
 import { useTranslation } from "react-i18next";
 import { Col, Row ,  Tooltip } from 'antd';
@@ -42,7 +46,12 @@ function OnlineEnquiries() {
   const [phoneClass, setphoneClass]=useState(false)
   const [loader, setLoader] = useState(true)
   const [form] = Form.useForm();
-  
+  const [regions, setRegions] = useState<any>(null)
+  const [regionsClass, setRegionsClass] = useState<any>(false)
+  const [typeClass, settypeClass] = useState<any>(false)
+  const [typeS, settypeS] = useState<any>(false)
+  const [secondName, setsecondName]=useState(false)
+  const [secondNameClass, setsecondNameClass]=useState(false)
   const [lastName, setlastName]=useState(false)
     const { t } = useTranslation();
   const onFinish = (values: any) => {
@@ -63,7 +72,7 @@ for (const key in values) {
 
 formData.append("text", textData)
 
-http.post<any>(`/PostApi/SpecializationApplication`, formData, {
+http.post<any>(`/PostApi/Application`, formData, {
   headers: { "Content-Type": "multipart/form-data" }
 }).then(() => {
      message.success({content:"Ma'lumotlaringiz qabul qilindi oparatorlarimiz siz bilan bog'lanishadi",
@@ -87,6 +96,9 @@ setlastNameClass(false)
 setphoneClass(false)
 setLoader(false)
 setlastName(false)
+settypeS(false)
+settypeClass(false)
+setRegionsClass(false);
      form.resetFields();
    
   })
@@ -108,7 +120,14 @@ setlastName(false)
     }
 
   };
- 
+  useEffect(()=>{
+getRegion()
+  },[])
+  const getRegion = () => {
+    http.get<any>(`GetApi/GetRegionContacts`)
+        .then((res) => {setRegions(res.data); setLoader(false)})
+        .catch(e => console.log(e))
+}
   const loaderT=()=>{
       setTimeout(()=>{
           setLoader(false)
@@ -158,6 +177,29 @@ const checkFam=(value:any)=>{
     }
       form.setFieldsValue({
         lastName:b
+      })
+ 
+}
+const checkOt=(value:any)=>{
+  var a=value.target.value
+  var b="" 
+  var f=true 
+  for(let i=0; i<a.length; i++){
+
+      if(a.charCodeAt(i)===39 || a.charCodeAt(i)===44 || (a.charCodeAt(i)>=65 && a.charCodeAt(i)<=90) || (a.charCodeAt(i)>=97 && a.charCodeAt(i)<=122)){
+        b+=a[i]
+      }else{
+        f=false
+      }
+    }
+    if(value.target.value.length>0){
+      setsecondNameClass(true)
+  
+    }else{
+      setsecondNameClass(false)
+    }
+      form.setFieldsValue({
+        secondName:b
       })
  
 }
@@ -233,7 +275,29 @@ const checkFam=(value:any)=>{
           <Input onChange={(e)=>{checkFam(e)}}  className="in1 ot" placeholder={t("Familiya")} />
          
       </Form.Item>
-     
+      <Form.Item data-placeholder={t("Ariza turi")} className={`myFor ${typeClass?"forPlace":''}`}  label=" "  tooltip={{ title: t("Ariza turini e'tibor bilan tanlang") , icon: <QuestionOutlined style={{color:'white'}} /> }} name="typeId"   rules={[{ required: true, message: t("check")?`${t("Viloyat")}${t("ni tanlashingiz shart")}`:`${t("ni tanlashingiz shart")} ${t("Viloyat")}` }]}>
+      <Select
+        className="border"
+        placeholder={!typeClass?t("Ariza turi"):''}
+        onChange={(value) => {if(value===3){form.setFieldsValue({
+          regionId: 0,
+        })
+      settypeS(true)
+      }else{
+        settypeS(false)
+
+      } }}
+        
+      >
+       
+         <Option value={1}>{t("check")?t("Murojaat"):t("Murojaat")}</Option>
+         <Option value={2}>{t("check")?t("Taklif"):t("Taklif")}</Option>
+         <Option value={3}>{t("check")?t("Shikoyat"):t("Shikoyat")}</Option>
+    
+       
+      </Select>
+    
+    </Form.Item>
           </Col>
           <Col style={{padding:'0px 20px'}} lg={12} md={24} sm={24} >
 
@@ -244,6 +308,21 @@ const checkFam=(value:any)=>{
 <Form.Item label=" " data-placeholder={t("E-mail")} tooltip={{ title: "Lotin tilida yozing", icon:  <QuestionOutlined style={{color:'white'}} /> }}   className={`myFor in ${emailClass?"forPlace":''}`} name='email' rules={[{ required: true, type: 'email',  message: t("check")?`${t("E-mail")}${t("ni kirtishingiz shart")}`:`${t("ni kirtishingiz shart")} ${t("E-mail")}`}]}>
         <Input style={{textTransform:'lowercase'}}  className="in1 ot" id="em" onChange={(e)=>{checkEmail(e)}} placeholder={t("E-mail")}/>
       </Form.Item> 
+      <Form.Item data-placeholder={t("Viloyat")} className={`myFor ${regionsClass?"forPlace":''}`}  label=" "  tooltip={{ title: t("Viloyatni e'tibor bilan tanlang") , icon: <QuestionOutlined style={{color:'white'}} /> }} name="regionId"   rules={[{ required: true, message: t("check")?`${t("Viloyat")}${t("ni tanlashingiz shart")}`:`${t("ni tanlashingiz shart")} ${t("Viloyat")}` }]}>
+      <Select
+        className="border"
+        placeholder={!regionsClass?t("Viloyat"):''}
+        onChange={(value) => {  setRegionsClass(true); }}
+        disabled={typeS} 
+      >
+        <Option value={0}>{t("Markaziy kengash")}</Option>
+       {regions!==null?regions.map((item:any)=>{
+           return(<Option value={item.regionId}>{t("check")?item.regionName:item.regionNameRu}</Option>)
+       }):""} 
+       
+      </Select>
+    
+    </Form.Item>
 </Col>
 <Col lg={24} md={24} sm={24} style={{padding:'0px 20px'}}  className={text?"salom":''}>
 <Form.Item  data-placeholder={t("Murojaat matni")} className={`myFor1 in ${textClass?"forPlace1":''}`} tooltip={{ title: "Lotin tilida yozing", icon:  <QuestionOutlined style={{color:'white'}} /> }}   style={{width:'100%'}} >

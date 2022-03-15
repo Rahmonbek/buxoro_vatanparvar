@@ -125,7 +125,7 @@
   .Add{font-size: 16px;  text-align: center;}
  .ant-collapse-header{ display: flex; align-items: center;} 
 
-.op{width: 100%; overflow-x: auto;}
+.op{width: 100%; overflow-x: auto; overflow-y: hidden;}
 
 
 

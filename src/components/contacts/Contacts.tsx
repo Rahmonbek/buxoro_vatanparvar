@@ -10,12 +10,13 @@ import { useTranslation } from 'react-i18next';
 import http from "../ui/Services";
 import logo from '../home/assets/logo.gif'
 import {Row, Col, Collapse} from 'antd'
-import { BsBank, BsBuilding, BsPerson } from "react-icons/bs";
+import { BsBank, BsBuilding,  BsEnvelope,  BsPerson } from "react-icons/bs";
 import {  AiOutlineFieldNumber, AiOutlinePhone } from "react-icons/ai";
 import {  GiBanknote } from "react-icons/gi";
 import { MdOutlinePlace } from "react-icons/md";
 import { HiOutlineMailOpen } from "react-icons/hi";
-import { RiBankCard2Line } from "react-icons/ri";
+import { RiBankCard2Line, RiBankCardFill, RiBankFill } from "react-icons/ri";
+import { FaMapMarkerAlt, FaRegEnvelope } from "react-icons/fa";
 
 // import BounceLoader from "react-spinners/BounceLoader";
 const { Panel } = Collapse;
@@ -114,10 +115,11 @@ useEffect(()=>{
       </div>
       :''}
       <div className="containerr">
-      
-        <PageTitle title={t("KONTAKTLAR")}/>
+      <PageTitle title={t("KONTAKTLAR")}/>
         <div className="tel">
+        
         <div className="slider1"  style={{ zIndex:'333',  backgroundColor:'white'}}>
+           
           <Swiper 
           slidesPerView={1} spaceBetween={0} breakpoints={{
               "670": {
@@ -272,34 +274,34 @@ useEffect(()=>{
         <div className="sal">
                       <Collapse onChange={callback} defaultActiveKey={[data.length !== 0 ?data[index - 1][0].id:0]} accordion>
                           {
-                              data.length !== 0 ? data[index - 1].map((item: any, index: any) =>
+                              data.length !== 0 ? data[index - 1].map((item: any, key: any) =>
                                   
-                              <Panel className={`${index===number?"Active":''} panel`}  style={{zIndex:-1}} key={index} header={
+                              <Panel className={`${key===Number(number)?"Active":''} panel`}  style={{zIndex:-1}} key={key} header={
                               <div className={style.headAcc}>
-                              <div style={{zIndex:-1}} className="headId">{index+1}</div>
+                              <div style={{zIndex:-1}} className="headId">{key+1}</div>
                               <div style={{zIndex:-1}} className="headName"><BsBuilding color="#133165"/> {t('check')?item.branchName:item.branchNameRu}</div>
                             </div>}>
 <Row>
 <Col className="colAcc" md={12} sm={24}>
-  <BsPerson  color="#133165" /> {item.branchPresident}
+  <BsPerson size='1.3rem'  color="#133165" /><span className="salomText"> {item.branchPresident}</span>
   </Col>
   <Col className="colAcc" md={12} sm={24}>
-  <AiOutlinePhone  color="#133165" /> {item.phoneNumber}
+  <AiOutlinePhone size='1.3rem'  color="#133165" /><span className="salomText"> {item.phoneNumber}</span>
   </Col>
   <Col className="colAcc" md={12} sm={24}>
-  <HiOutlineMailOpen  color="#133165" /> {item.email}
+  <HiOutlineMailOpen size='1.3rem'  color="#133165" /><span className="salomText"> {item.email}</span>
   </Col>
   <Col className="colAcc" md={12} sm={24}>
-  <BsBank  color="#133165" /> {item.bankName}
+  <RiBankFill size='1.3rem'  color="#133165" /><span className="salomText"> {item.bankName}</span>
   </Col>
   <Col className="colAcc" md={12} sm={24}>
-  <GiBanknote  color="#133165" /> {item.bankAccount}
+  <GiBanknote size='1.3rem'  color="#133165" /><span className="salomText"> {item.bankAccount}</span>
   </Col>
   <Col className="colAcc" md={12} sm={24}>
-  <RiBankCard2Line  color="#133165" /> {item.bankMfo}
+  <RiBankCardFill size='1.3rem'  color="#133165" /><span className="salomText"> {item.bankMfo}</span>
   </Col>
   <Col className="colAcc" md={12} sm={24}>
-  <MdOutlinePlace  color="#133165" /> {item.branchAdress}
+  <FaMapMarkerAlt size='1.3rem'  color="#133165" /><span className="salomText"> {item.branchAdress}</span>
   </Col>
 </Row>
                              
@@ -313,6 +315,8 @@ useEffect(()=>{
         <div className="komp">
         <Row style={{width:'100%'}}>
 <Col style={{padding:'5px'}} lg={6} md={24} sm={24}>
+   
+<h1>{t("Viloyatlar")}</h1>
   <ul className={style.ulTab}>
   <li>
  <div className="swiper-slide_body">
@@ -470,7 +474,7 @@ useEffect(()=>{
                 <AiOutlinePhone  size='2rem' color="#133165" />
                   </th>
                 <th className={style.email}>
-                <MdOutlinePlace  size='2rem' color="#133165" />
+                <BsEnvelope  size='2rem' color="#133165" />
                   </th>
                 
               </tr>   
@@ -478,11 +482,13 @@ useEffect(()=>{
 <div className={style.op}>
                       <Collapse onChange={callback} defaultActiveKey={[data.length !== 0 ?data[index - 1][0].id:0]} accordion>
                           {
-                              data.length !== 0 ? data[index - 1].map((item: any, index: any) =>
-                                  
-                              <Panel className={`${index===number?"Active":''} panel`}  style={{zIndex:-1}} key={index} header={
+                              data.length !== 0 ? data[index - 1].map((item: any, key: any) =>
+                                  {
+                                    
+                                    return(
+                              <Panel className={`${key===Number(number)?"Active":''} panel`}  style={{zIndex:-1}} key={key} header={
                               <div className={style.headAcc}>
-                              <div style={{zIndex:-1}} className={style.headId}>{index+1}</div>
+                              <div style={{zIndex:-1}} className={style.headId}>{key+1}</div>
                               <div style={{zIndex:-1}} className={style.headName}> {t('check')?item.branchName:item.branchNameRu}</div>
                               <div style={{zIndex:-1}} className={style.headPerson}>{item.branchPresident}</div>
                               <div style={{zIndex:-1}} className={style.headPhone}>{item.phoneNumber}</div>
@@ -490,20 +496,20 @@ useEffect(()=>{
                             </div>}>
                             <Row>
 <Col className="colAcc" md={12} sm={24}>
-  <BsBank  color="#133165" /> {item.bankName}
+  <RiBankFill  color="#133165" size='1.4rem' /> <span className="salomText">{item.bankName}</span>
   </Col>
   <Col className="colAcc" md={12} sm={24}>
-  <GiBanknote  color="#133165" /> {item.bankAccount}
+  <GiBanknote  color="#133165" size='1.4rem' />  <span className="salomText">{item.bankAccount}</span>
   </Col>
   <Col className="colAcc" md={12} sm={24}>
-  <RiBankCard2Line  color="#133165" /> {item.bankMfo}
+  <RiBankCardFill  color="#133165" size='1.4rem' />  <span className="salomText">{item.bankMfo}</span>
   </Col>
   <Col className="colAcc" md={12} sm={24}>
-  <MdOutlinePlace  color="#133165" /> {item.branchAdress}
+  <FaMapMarkerAlt  color="#133165" size='1.4rem' />  <span className="salomText">{item.branchAdress}</span>
   </Col>
 </Row>
                             </Panel>
-                    
+                    )}
                     ):''
                   }
                     </Collapse>

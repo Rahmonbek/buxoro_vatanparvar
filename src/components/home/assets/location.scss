@@ -29,17 +29,25 @@
                 padding-top: 23px;
                 .email {
                     padding-top: 4px;
+                    font-size: 17px;
+                    color: #133165;
+padding-left: 15px;
                 }
             }
             .location-info-phone {
                 display: flex;
                 padding-top: 23px;
+                font-size: 17px;
+
             }
             .location-info-document {
                 display: flex;
                 padding-top: 23px;
-                a {
-                    padding-top: 8px;
+                p {
+                    font-size: 17px;
+                    color: #133165;
+                    padding-left: 15px;
+
                 }
             }
             .icon {

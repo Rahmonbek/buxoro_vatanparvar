@@ -51,8 +51,8 @@
 
     .slider-item_img {
         // padding: 10px 0;
-        height: 68px;
-        padding-top: 21px;
+        height: 50px;
+        padding-top: 10px;
         padding-bottom: 5px;
         -webkit-user-drag: none;
         
@@ -134,7 +134,8 @@ width:95vw !important;
 }
   
 // .Active{background-color: #e0f2fd !important;}
-.panel{background-color: white;border-bottom: 3px solid transparent;}
+.panel{background-color: white; border-bottom: 3px solid transparent;}
+.panel .ant-collapse-header{height:50px !important}
 
 .panel:hover{background-color: #e0f2fd;
     // border-bottom: 3px solid #133165 !important;
@@ -143,6 +144,7 @@ width:95vw !important;
 @media (max-width:1024px){
     .komp{display: none;}
     .tel{display: block;}
+    
 }
 .sal{margin-top: 40px;}
 .headId{width:10%; z-index: -1;}
@@ -150,3 +152,12 @@ width:95vw !important;
 .colAcc{padding:5px; font-size: 16px;}
 .contacts .ant-collapse-arrow{position: relative; top:5px;}
 .contacts .ant-row{width:100% !important}
+.Active{background-color: #e0f2fd;}
+.Active .ant-collapse-content{background-color: #e0f2fd;}
+.salomText{position: relative; top:-5px}
+.komp h1{color: #133165; text-align: center; padding-top: 10px;}
+
+@media (max-width:1424px){
+    .panel .ant-collapse-header{height: 68px !important;}
+    .contacts .slider-item_img{height: 68px !important}
+}
