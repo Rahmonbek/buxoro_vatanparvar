@@ -9,7 +9,7 @@ import style from  "./assets/style.module.css";
 import { useTranslation } from 'react-i18next';
 import http from "../ui/Services";
 import logo from '../home/assets/logo.gif'
-import {Row, Col, Collapse} from 'antd'
+import {Row, Col, Collapse, Tooltip} from 'antd'
 import { BsBank, BsBuilding,  BsEnvelope,  BsFillEnvelopeFill,  BsFillTelephoneFill,  BsPerson } from "react-icons/bs";
 import {  AiOutlineFieldNumber, AiOutlinePhone } from "react-icons/ai";
 import {  GiBanknote, GiMailbox, GiReceiveMoney } from "react-icons/gi";
@@ -102,47 +102,47 @@ useEffect(()=>{
                               data.length !== 0 ? data[index - 1].map((item: any, key: any) =>
                                   
                               <Panel className={`${key===Number(number)?"Active":''} panel`}  style={{zIndex:-1}} key={key} header={
-                              <div className={style.headAcc}>
-                              <div style={{zIndex:-1}} className="headId">{key+1}</div>
-                              <div style={{zIndex:-1}} className="headName"><BsBuilding color="#133165"/> {t('check')?item.branchName:item.branchNameRu}</div>
-                            </div>}>
-<Row>
-<Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
-  <BsPerson size='1.3rem'  color="#133165" /><span className="salomText"> {item.ranchPresident===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.ranchPresident}</span>
-  </Col>
+                                <div className={style.headAcc}>
+                                <div style={{zIndex:-1}} className="headId">{key+1}</div>
+                                <div style={{zIndex:-1}} className="headName"><BsBuilding color="#133165"/> {t('check')?item.branchName:item.branchNameRu}</div>
+                              </div>}>
+  <Row>
   <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
-  <AiOutlinePhone size='1.3rem'  color="#133165" /><span className="salomText"> {item.phoneNumber===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.phoneNumber}</span>
-  </Col>
-  <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
-  <HiOutlineMailOpen size='1.3rem'  color="#133165" /><span className="salomText"> {item.email==="null"?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.email}</span>
-  </Col>
-
- 
-  <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
-  <RiBankFill  color="#133165" size='1.3rem' /> <span className="salomText">{item.bankName===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.bankName}</span>
-  </Col>
- 
+    <BsPerson size='1.3rem'  color="#133165" /><span className="salomText"> {item.branchPresident===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.branchPresident}</span>
+    </Col>
+    <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
+    <AiOutlinePhone size='1.3rem'  color="#133165" /><span className="salomText"> {item.phoneNumber===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.phoneNumber}</span>
+    </Col>
+    <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
+    <HiOutlineMailOpen size='1.3rem'  color="#133165" /><span className="salomText"> {item.email==="null"?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.email}</span>
+    </Col>
   
-  <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
-  <FaMapMarkerAlt  color="#133165" size='1.3rem' />  <span className="salomText">{item.branchAdress===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.branchAdress}</span>
-  </Col>
-  <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
-  <RiBankCardFill  color="#133165" size='1.3rem' /> <span className="salomText">{item.bankAccount===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.bankAccount.slice(0, 4)+" "+item.bankAccount.slice(4, 8)+" "+item.bankAccount.slice(8, 12)+" "+item.bankAccount.slice(12, 16)+" "+item.bankAccount.slice(16, 20)} </span>
-  </Col>
-  <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
-  <b style={{color:'#133165'}}>INN</b> <span style={{top:'0px'}} className="salomText">{item.bankAccount===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.inn.slice(0, 3)+" "+item.inn.slice(3, 6)+" "+item.inn.slice(6, 9)} </span>
-  </Col>
- 
-  <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
-   <b style={{color:'#133165'}}>MFO</b> <span style={{top:'0px'}} className="salomText">{item.bankMfo===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.bankMfo} </span>
-  </Col>
-  <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
-  <BsFillEnvelopeFill color="#133165" size='1.3rem'/> <span className="salomText">{item.bankAccount===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.mailIndex} </span>
-  </Col>
-  
-</Row>
-                             
-                            </Panel>
+   
+    <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
+    <RiBankFill  color="#133165" size='1.3rem' /> <span className="salomText">{item.bankName===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.bankName}</span>
+    </Col>
+   
+    
+    <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
+    <FaMapMarkerAlt  color="#133165" size='1.3rem' />  <span className="salomText">{item.branchAdress===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.branchAdress}</span>
+    </Col>
+    <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
+    <RiBankCardFill  color="#133165" size='1.3rem' /> <span className="salomText">{item.bankAccount===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.bankAccount.slice(0, 4)+" "+item.bankAccount.slice(4, 8)+" "+item.bankAccount.slice(8, 12)+" "+item.bankAccount.slice(12, 16)+" "+item.bankAccount.slice(16, 20)} </span>
+    </Col>
+    <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
+    <b style={{color:'#133165'}}>INN</b> <span style={{top:'0px'}} className="salomText">{item.inn===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.inn.slice(0, 3)+" "+item.inn.slice(3, 6)+" "+item.inn.slice(6, 9)} </span>
+    </Col>
+   
+    <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
+     <b style={{color:'#133165'}}>MFO</b> <span style={{top:'0px'}} className="salomText">{item.bankMfo===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.bankMfo} </span>
+    </Col>
+    <Col style={{padding:'10px'}} className="colAcc" md={12} sm={24}>
+    <BsFillEnvelopeFill color="#133165" size='1.3rem'/> <span className="salomText">{item.mailIndex===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.mailIndex} </span>
+    </Col>
+    
+  </Row>
+                               
+                              </Panel>
                     
                     ):''
                   }
@@ -153,28 +153,38 @@ useEffect(()=>{
         <Row style={{width:'100%'}}>
 
 <Col style={{padding:'5px'}} lg={24} md={24} sm={24}>
-   
+     
 <div className="content">
         <table className="content-table table1" >
             <thead style={{backgroundColor:'white', height:'65px',}}  className={style.the}>
                           <tr>
                          <th className={style.id}>
+                          <Tooltip placement="top" title={t("Tartib raqam")}>
                          <MdFormatListNumbered size='2rem' color="#133165"/>
+                         </Tooltip>
 
                            </th>    
                 <th className={style.name}>
+                 <Tooltip placement="top" title={t("Tashkilot nomi")}>
                 <FaBuilding  size='2rem' color="#133165"/>
+                </Tooltip>
                   </th>
               
                 <th className={style.person} style={{paddingLeft:'40px'}}>
+                 <Tooltip placement="top" title={t("Tashkilot rahbari")}>
                 <ImUserTie  size='2.1rem' color="#133165" />
+                </Tooltip>
                 </th>
                
                 <th className={style.phone}>
+                 <Tooltip placement="top" title={t("Telefon raqam")}>
                 <BsFillTelephoneFill size='2rem' color="#133165" />
+                </Tooltip>
                   </th>
                 <th className={style.email}>
+                 <Tooltip placement="top" title={t("E-mail")}>
                 <BsFillEnvelopeFill  size='2rem' color="#133165" />
+                </Tooltip>
                   </th>
                 
               </tr>   
@@ -196,25 +206,25 @@ useEffect(()=>{
                             </div>}>
                             <Row>
 <Col className="colAcc" md={12} sm={24}>
-  <RiBankFill  color="#133165" size='1.4rem' /> <span className="salomText">{item.bankName===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.bankName}</span>
+<Tooltip placement="left" title={t("Bank nomi")}><RiBankFill  color="#133165" size='1.4rem' /> <span className="salomText">{item.bankName===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.bankName}</span></Tooltip>
   </Col>
  
   
   <Col className="colAcc" md={12} sm={24}>
-  <FaMapMarkerAlt  color="#133165" size='1.4rem' />  <span className="salomText">{item.branchAdress===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.branchAdress}</span>
+  <Tooltip placement="left" title={t("Tashkilot manzili")}><FaMapMarkerAlt  color="#133165" size='1.4rem' />  <span className="salomText">{item.branchAdress===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.branchAdress}</span></Tooltip>
   </Col>
   <Col className="colAcc" md={12} sm={24}>
-  <RiBankCardFill  color="#133165" size='1.4rem' /> <span className="salomText">{item.bankAccount===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.bankAccount.slice(0, 4)+" "+item.bankAccount.slice(4, 8)+" "+item.bankAccount.slice(8, 12)+" "+item.bankAccount.slice(12, 16)+" "+item.bankAccount.slice(16, 20)} </span>
+  <Tooltip placement="left" title={t("Tashkilot hisob raqami")}><RiBankCardFill  color="#133165" size='1.4rem' /> <span className="salomText">{item.bankAccount===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.bankAccount.slice(0, 4)+" "+item.bankAccount.slice(4, 8)+" "+item.bankAccount.slice(8, 12)+" "+item.bankAccount.slice(12, 16)+" "+item.bankAccount.slice(16, 20)} </span></Tooltip>
   </Col>
   <Col className="colAcc" md={12} sm={24}>
-  <b style={{color:'#133165'}}>INN</b> <span style={{top:'0px'}} className="salomText">{item.bankAccount===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.inn.slice(0, 3)+" "+item.inn.slice(3, 6)+" "+item.inn.slice(6, 9)} </span>
+  <Tooltip placement="left" title={t("INN")}><b style={{color:'#133165'}}>INN</b> <span style={{top:'0px'}} className="salomText">{item.inn===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.inn.slice(0, 3)+" "+item.inn.slice(3, 6)+" "+item.inn.slice(6, 9)} </span></Tooltip>
   </Col>
  
   <Col className="colAcc" md={12} sm={24}>
-   <b style={{color:'#133165'}}>MFO</b> <span style={{top:'0px'}} className="salomText">{item.bankMfo===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.bankMfo} </span>
+  <Tooltip placement="left" title={t("MFO")}> <b style={{color:'#133165'}}>MFO</b> <span style={{top:'0px'}} className="salomText">{item.bankMfo===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.bankMfo} </span></Tooltip>
   </Col>
   <Col className="colAcc" md={12} sm={24}>
-  <BsFillEnvelopeFill color="#133165" size='1.4rem'/> <span className="salomText">{item.bankAccount===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.mailIndex} </span>
+  <Tooltip placement="left" title={t("Pochta indeks")}><BsFillEnvelopeFill color="#133165" size='1.4rem'/> <span className="salomText">{item.mailIndex===null?<span style={{color:'#a2a0a0'}}>Ma'lumot mavjud emas</span>:item.mailIndex} </span></Tooltip>
   </Col>
   
 </Row>

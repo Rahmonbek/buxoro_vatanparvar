@@ -11,7 +11,7 @@ import { FaTelegramPlane, FaFacebookF } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { Image } from 'antd';
 import { Col, Row } from 'antd';
-import { api } from '../../../host';
+import { api, region } from '../../../host';
 
 
 
@@ -33,9 +33,9 @@ function OpenNews() {
               var config=res.data
             var textUz=config.mainTextUz  
             var textRu=config.mainTextRu
-            var date=config.createDate.substring(0, 10)
+            var date=config.newsDate.substring(0, 10)
             var d=date.substring(8, 10)+'.'+date.substring(5, 7)+'.'+date.substring(0, 4)
-            config.createDate=d
+            config.newsDate=d
             var Uz=""  
             var Ru=""  
             textUz.split("</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>").map((item:any)=>{
@@ -58,13 +58,13 @@ function OpenNews() {
                                                                             config.mainTextRu=textRu
             setData(config); })
            .catch(e =>console.log(e))
-           http.get<any>(`/GetApi/GetNews/`)
+           http.get<any>(`/GetApi/GetNews/?regionId=${region}`)
            .then((res) => {
-            var f=res.data.reverse().splice(0, 6)
+            var f=res.data.splice(0, 6)
             var a:any=[]
             f.map((item:any)=>{
 var b=item
-b.createDate=b.createDate.substring(8, 10)+'.'+b.createDate.substring(5, 7)+'.'+b.createDate.substring(0, 4)
+b.newsDate=b.newsDate.substring(8, 10)+'.'+b.newsDate.substring(5, 7)+'.'+b.newsDate.substring(0, 4)
 a.push(b)
 
             })   
@@ -114,7 +114,7 @@ a.push(b)
                     <div className="date">
                         <p><MdOutlineDateRange className='icon' size='1.4rem' /></p>
                         {Object.keys(data).length !== 0 &&
-                            <p>{data.createDate.substring(0, 10)}</p>
+                            <p>{data.newsDate.substring(0, 10)}</p>
                         }
                     </div>
                     <div className="visites">
@@ -200,7 +200,7 @@ a.push(b)
            <Link to={"/allnews/" + item.id} className="news_list-item1" key={key}>
             <div className='icons'>
             <p className='tabDate'><MdOutlineDateRange className='icon' size='1rem' />{
-                                        item.createDate.substring(0, 10)
+                                        item.newsDate.substring(0, 10)
                                     }</p>
             <p className='tabDate'>{
                                         item.visits

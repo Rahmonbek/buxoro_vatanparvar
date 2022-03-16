@@ -58,7 +58,7 @@
 }
 
 .phone {
-    width: 15%;
+    width: 10%;
     overflow-x: hidden;
     text-align: center;
    background-color: white; 
@@ -67,14 +67,14 @@
 .email {
     text-align: center;
     background-color: white; 
-    width: 25%;
+    width: 15%;
     overflow-x: hidden;
   
 }
 .name {
     text-align: center;
     background-color: white; 
-    width: 25%;
+    width: 40%;
     overflow-x: hidden;
    
 }
@@ -118,10 +118,10 @@
   .headAcc{display: flex; width:100%; z-index: 2 !important;}
   .headAcc div{padding:5px; height:35px; font-size: 16px;}
   .headId{width:5% !important}
-  .headName{width:25% !important; overflow-y: hidden;}
-  .headPerson{width:30% !important;  text-align: center;}
-  .headPhone{width:15% !important;  text-align: center;}
-  .headEmail{width:25% !important;  text-align: center; padding-left: 20px !important;}
+  .headName{width:40% !important; font-size: 16px !important; overflow-y: hidden;}
+  .headPerson{width:30% !important;  padding-left: 20px !important; text-align: center;}
+  .headPhone{width:10% !important;  text-align: center;}
+  .headEmail{width:15% !important;  text-align: center; padding-left: 20px !important;}
   .Add{font-size: 16px;  text-align: center;}
  .ant-collapse-header{ display: flex; align-items: center;} 
 .ulTab{margin-top:-20px !important}

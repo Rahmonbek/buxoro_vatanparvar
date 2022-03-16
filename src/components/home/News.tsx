@@ -39,7 +39,7 @@ export function News() {
                                 <div className="news_list-item_content">
                                     <div className="news_list-item-link">
                                         {item.titleUz}
-                                        <p className="news_list-item_date">{item.createDate.substring(0, 10)}</p>
+                                        <p className="news_list-item_date">{item.newsDate.substring(0, 10)}</p>
                                     </div>
                                 </div>
                             </Link>
@@ -53,26 +53,38 @@ export function News() {
 
             
             <div className="card-grid-space">
+
+<Link to={"/allnews/" + item.id} className="news_list-item1" key={index}>
     
     <a className="card" style={{backgroundImage: `url(${url}/${item.titleImage})`}}>
       <div className='blackPar'>
         {/* <h1>HTML Syntax</h1> */}
-        <div className="date"><FiCalendar  size="1em" style={{position:'relative',  top:'-5px', marginRight:'5px'}} className="icon"/>{item.createDate.substring(0, 10)}</div>
-        
+        <div className="date"><FiCalendar  size="1em" style={{position:'relative',  top:'-5px', marginRight:'5px'}} className="icon"/>{item.newsDate.substring(0, 10)}</div>
+    
         <div className="visit">{item.visits}<AiOutlineEye  size="1em" style={{position:'relative',  top:'-10px', marginLeft:'5px'}} className="icon"/></div>
-        <div className='black'> </div>
-        <p>{t("check")?item.titleUz:item.titleRu}</p>
        
+     
+       
+        <div className='black'> </div>
+        
+        <p>{t("check")?item.titleUz:item.titleRu}</p>
+      
         <div className="tags">
-            
-        <Link to={"/allnews/" + item.id} className="news_list-item1" key={index}>
+        
           <div className="tag"><AiFillRightCircle size="2em" style={{position:'relative',  top:'-10px'}} className="icon"/></div>
-          </Link>
-         
-          </div>    
           </div>
+         
+          
+        
+          </div> 
+        
           </a>
-        </div>
+          </Link>
+       
+       
+    
+          </div>
+        
       
   
  

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {PageTitle} from '../ui/PageTitle' ;
 import {HiOutlineLocationMarker} from "react-icons/hi";
-import {AiOutlineMail} from "react-icons/ai";
+import {AiFillYoutube, AiOutlineMail} from "react-icons/ai";
 // import {AiOutlineInstagram} from "react-icons/ai";
 import {FiPhone} from "react-icons/fi";
 import {HiOutlineDocumentDownload} from "react-icons/hi";
@@ -68,6 +68,9 @@ function Location() {
                         </a>
                         <a target="_blank" href="https://t.me/mudofaavatanparvartashkiloti" className="location-info-social-item_item" >
                             <FaTelegramPlane size="0.9em" />
+                        </a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCI41Xe2P3GPUz5YK-TzEJZg" className="location-info-social-item_item" >
+                            <AiFillYoutube size="0.9em" />
                         </a>
                     </div>      
                 </div>

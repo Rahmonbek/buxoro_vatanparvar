@@ -240,7 +240,7 @@
  "Toifa turi":"Тип категории",
  "Ta'lim vaqti":"Время обучения",
  "E-mail":"Электронная почта",
-"Murojaat matni":"Справочный текст",
+"Murojaat matni":"Текст обращения",
 "Murojaatni ko'proq yoriting":"Больше освещения апелляции",
 
 "Lotin tilida yozing": "Написать латиницей",
@@ -279,17 +279,28 @@
 "Taklif": "Предложение",
 "Shikoyat": "Жалоба",
 "Markaziy kengash": "Центральный совет",
-"Viloyatlar":"РЕГИОНЫ"
+"Viloyatlar":"РЕГИОНЫ",
+
+"logo_header": "<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ ОБОРОНЕ РЕСПУБЛИКИ УЗБЕКИСТАН «ВАТАНПАРВАР»",
+"markaziy_kengash1": "ОБ ОРГАНИЗАЦИИ «ВАТАНПАРВАР»",
+"markaziy_kengash": "ОБ ОРГАНИЗАЦИИ",
+"region": "Бухарская область",
+"mk-address": "200117, г.Бухара, ул.К.Муртазоева, 17",
 
 
 
-
+"Tashkilot rahbari": "Руководитель организации",
+"Tartib raqam": "Порядковый номер",
+"Bank nomi": "Название банка",
+"Tashkilot manzili": "Адрес организации",
+"Tashkilot hisob raqami": "Учетная запись организации",
+"INN": "ИНН",
+"MFO": "МФО",
+"Pochta indeks": "Почтовый индекс"
 
 
 
 }
-
-
 
 
 

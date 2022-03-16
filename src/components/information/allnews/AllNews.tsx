@@ -25,11 +25,11 @@ function AllNews() {
     const [bosh, setbosh] = useState<number>(0);
     const getNews = () => {
         http.get<any>(`/GetApi/GetNews/?regionId=${region}`)
-            .then((res) => {  var f=res.data.reverse()
+            .then((res) => {  var f=res.data
                 var a:any=[]
                 f.map((item:any)=>{
     var b=item
-    b.createDate=b.createDate.substring(8, 10)+'.'+b.createDate.substring(5, 7)+'.'+b.createDate.substring(0, 4)
+    b.newsDate=b.newsDate.substring(8, 10)+'.'+b.newsDate.substring(5, 7)+'.'+b.newsDate.substring(0, 4)
     a.push(b)
     
                 })   
@@ -73,24 +73,32 @@ if(pageNumber===1 && bosh+6<data.length/6){
             
             <div className="card-grid-space">
     
+    <Link to={"/allnews/" + item.id} className="news_list-item1" key={index}>
+    
     <a className="card" style={{backgroundImage: `url(${url}/${item.titleImage})`}}>
       <div className='blackPar'>
         {/* <h1>HTML Syntax</h1> */}
-        <div className="date"><FiCalendar  size="1em" style={{position:'relative',  top:'-5px', marginRight:'5px'}} className="icon"/>{item.createDate.substring(0, 10)}</div>
-        
+        <div className="date"><FiCalendar  size="1em" style={{position:'relative',  top:'-5px', marginRight:'5px'}} className="icon"/>{item.newsDate.substring(0, 10)}</div>
+    
         <div className="visit">{item.visits}<AiOutlineEye  size="1em" style={{position:'relative',  top:'-10px', marginLeft:'5px'}} className="icon"/></div>
-        <div className='black'> </div>
-        <p>{t("check")?item.titleUz:item.titleRu}</p>
        
+     
+       
+        <div className='black'> </div>
+        
+        <p>{t("check")?item.titleUz:item.titleRu}</p>
+      
         <div className="tags">
-            
-        <Link to={"/allnews/" + item.id} className="news_list-item1" key={index}>
+        
           <div className="tag"><AiFillRightCircle size="2em" style={{position:'relative',  top:'-10px'}} className="icon"/></div>
-          </Link>
-         
-          </div>    
           </div>
+         
+          
+        
+          </div> 
+        
           </a>
+          </Link>
         </div>
       
   

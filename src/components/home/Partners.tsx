@@ -9,6 +9,7 @@ import SwiperCore, {Navigation, Autoplay} from 'swiper';
 import "./assets/header-slider.scss"
 import {Swiper, SwiperSlide} from 'swiper/react';
 import { useTranslation } from 'react-i18next';
+import { Tooltip } from 'antd';
 SwiperCore.use([Navigation,Autoplay]);
 
 export function Partners() {
@@ -36,7 +37,9 @@ export function Partners() {
                     },
                 }} loop={true} navigation={true} className="mySwiper">
                     <SwiperSlide>
-                        <a href="https://mudofaa.uz/">
+                        <a target="_blank" href="https://mudofaa.uz/">
+                       <Tooltip placement="top" title="mudofaa.uz">
+
                         <div className="swiper-slide_body">
                             <div className="slider-item_img">
                                 <img src={Mv} alt=""/>
@@ -44,10 +47,11 @@ export function Partners() {
                             <div>
                                 <p className='partNew'>{t('mv')}</p>
                             </div>
-                        </div></a>
+                        </div></Tooltip></a>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a href="https://milliygvardiya.uz/oz">
+                        <a target="_blank" href="https://milliygvardiya.uz/oz">
+                       <Tooltip placement="top" title="milliygvardiya.uz">
                         <div className="swiper-slide_body">
                             <div className="slider-item_img">
                                 <img src={Mg} alt=""/>
@@ -55,10 +59,11 @@ export function Partners() {
                             <div>
                                 <p className='partNew'>{t('mg')}</p>
                             </div>
-                        </div></a>
+                        </div></Tooltip></a>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a href="https://iiv.uz/">
+                        <a target="_blank" href="https://iiv.uz/">
+                       <Tooltip placement="top" title="iiv.uz">
                         <div className="swiper-slide_body">
                             <div className="slider-item_img">
                                 <img src={iiv} alt=""/>
@@ -66,10 +71,11 @@ export function Partners() {
                             <div>
                                 <p className='partNew'>{t('iiv')}</p>
                             </div>
-                        </div></a>
+                        </div></Tooltip></a>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a href="#">
+                        <a target="_blank" href="http://yoshlar.gov.uz/uz/">
+                       <Tooltip placement="top" title="yoshlar.gov.uz">
                         <div className="swiper-slide_body">
                             <div className="slider-item_img">
                                 <img src={Gerb} alt=""/>
@@ -77,10 +83,11 @@ export function Partners() {
                             <div>
                                 <p className='partNew'>{t('yi')}</p>
                             </div>
-                        </div></a>
+                        </div></Tooltip></a>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a href="#">
+                        <a target="_blank" href="http://minsport.uz/ru">
+                       <Tooltip placement="top" title="minsport.uz">
                         <div className="swiper-slide_body">
                             <div className="slider-item_img">
                                 <img src={Gerb} alt=""/>
@@ -88,7 +95,7 @@ export function Partners() {
                             <div>
                                 <p className='partNew'>{t('os')}</p>
                             </div>
-                        </div>
+                        </div></Tooltip>
                         </a>
                     </SwiperSlide>
                 </Swiper>
