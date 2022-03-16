@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {PageTitle} from '../ui/PageTitle' ;
 import {HiOutlineLocationMarker} from "react-icons/hi";
 import {AiOutlineMail} from "react-icons/ai";
@@ -12,9 +12,27 @@ import {FaTelegramPlane} from "react-icons/fa"
 import { YMaps, Map, Placemark, FullscreenControl, GeolocationControl, RouteButton, TrafficControl, ZoomControl, Clusterer} from 'react-yandex-maps';
 import { useTranslation } from 'react-i18next';
 import "./assets/location.scss";
+import http from '../ui/Services';
+import { region } from '../../host';
 
 function Location() {
     const {t} = useTranslation();
+    const [data, setData] = useState<any[]>([])
+    const getNews = async () => {
+        await http.get(`GetApi/GetRegionContacts/${region}`)
+            .then((res) => {
+                
+                var a=[]
+     
+     
+                a.push(res.data.filter((data: any) => data.regionId === region))
+               
+                setData(a)})
+            .catch(e => console.log(e))
+    }
+    useEffect(() => {
+        getNews();
+    }, [])
     return (
         <div className='location'>
             <PageTitle title={t('MAP')}/>
@@ -22,25 +40,24 @@ function Location() {
               <div className="location-container">
                 <div className="location-info">
                     <div className="location-info-address">
-                        <a href="https://goo.gl/maps/ZS6VGNh84NJsykTr7"  className='iconn'><HiOutlineLocationMarker className="icon" size="2.1rem" color="#133165" cursor="pointer"/></a>
-                       <a href="https://goo.gl/maps/ZS6VGNh84NJsykTr7">{t("mk-address")} </a>  
+                        <a href="https://goo.gl/maps/WnKiD14WoYxDTAqL7" target="_blank"  className='iconn'><HiOutlineLocationMarker className="icon" size="2.1rem" color="#133165" cursor="pointer"/></a>
+                       <a href="https://goo.gl/maps/WnKiD14WoYxDTAqL7"  target="_blank" >{data.length!==0?t("check")?data[0][0].regionAdress:data[0][0].regionAdressRu:''} </a>  
                     </div>
                     <div className="location-info-email">
                         <p key="icon" className='iconn'><AiOutlineMail className="icon" size="2.1rem" color="#133165" cursor="pointer"/></p>
-                        <p  key="email" className="email">mkvatanparvar@yandex.ru</p>  
+                        <p  key="email" className="email">{data.length!==0?data[0][0].email:''}</p>  
                     </div>     
                     <div className="location-info-phone">
                         <div className="location-info-phone-icon">
                             <FiPhone className="icon" size="2.1rem" color="#133165" style={{marginTop:'10px'}} cursor="pointer"/>
                         </div>
                         <div className="location-info-phone-nuber">
-                           <p className=""><a href="tel:+998781503150">+998 (78) 150 - 31 - 50</a></p>
-                           <p className="" style={{marginTop:'-10px'}}><a href="tel:+998781503151">+998 (78) 150 - 31 - 51</a></p>
+                           <p className=""><a href="tel:+998553039849">{data.length!==0?data[0][0].phoneNumber:''}</a></p>
                         </div>
                     </div>    
                     <div className="location-info-document">
                         <HiOutlineDocumentDownload className="icon" size="2.1rem" color="#133165" cursor="pointer"/>
-                        <a href="https://test.vitc.uz/Files/MK.docx" target="_blank">{t("Rekvizitlar")}</a>  
+                        <a href="https://test.vitc.uz/Files/BUXORO.docx" target="_blank">{t("Rekvizitlar")}</a>  
                     </div>     
                     <div className="location-info-social" style={{marginTop:'30px'}}>
                        <a target="_blank" href="https://www.facebook.com/Mudofaaga-komaklashuvchi-Vatanparvar-tashkiloti-108212348006242" className="location-info-social-item_item" >
@@ -60,7 +77,7 @@ function Location() {
                    <YMaps  className="map-sect">
                        <div  >
                            <Map  width="100%" height="368px" defaultState={{
-                               center: [41.328925, 69.280003] ,
+                               center: [39.753049, 64.414738] ,
                                zoom:17,
                                }}
                                >
@@ -71,7 +88,7 @@ function Location() {
                 >
                   <Placemark
                     key={-1}
-                    geometry={[41.328925, 69.280003]}
+                    geometry={[39.753049, 64.414738]}
                     options={{
                       iconLayout: "default#image",
                       iconImageHref: person,

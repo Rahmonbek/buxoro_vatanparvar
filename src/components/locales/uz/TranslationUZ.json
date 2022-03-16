@@ -252,7 +252,6 @@
 "O'zingizga mos ta'lim vaqtini tanlang":"O'zingizga mos ta'lim vaqtini tanlang",
 "O'zingizga mos ta'lim yo'nalishini tanlang":"O'zingizga mos ta'lim yo'nalishini tanlang",
 "check":true,
-"mk-address":"l00017, Toshkent shahar , Yunusobot tumani, Minor mavzesi , Osiyo ko'chasi (Xurshid), 86A",
 "Rekvizitlar":"Rekvizitlar",
 "Batafsil":"Batafsil",
 
@@ -275,8 +274,11 @@
 "Viloyatlar":"HUDUDLAR",
 
 "logo_header":"O’ZBEKISTON RESPUBLIKASI <br/> MUDOFAASIGA KO’MAKLASHUVCHI <br/> “VATANPARVAR” TASHKILOTI <br/> <strong>BUXORO VILOYATI KENGASHI</strong>",
-"markaziy_kengash":"VILOYAT KENGASHI",
-"region":"Buxoro viloyati"
+"markaziy_kengash1":"“VATANPARVAR” TASHKILOTI HAQIDA",
+"markaziy_kengash":"TASHKILOT HAQIDA",
+"region":"Buxoro viloyati",
+"mk-address":"200117, Buxoro shahar, Q.Murtazoyev ko'chasi, 17-uy"
+
 
 
 } 

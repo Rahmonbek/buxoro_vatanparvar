@@ -53,12 +53,12 @@ export function Map() {
                           return( <path key={key} onClick={(e) => {
                             setShowModal(true);
                             //@ts-ignore
-                            setCurrentRegion(item.regionName)
+                            setCurrentRegion(t("check")?item.regionName:item.regionNameRu)
                                //@ts-ignore
-                                setCurrentAddress(item.regionAdress)
-                                console.log(data[6].regionAdress)
+                                setCurrentAddress(t("check")?item.regionAdress:item.regionAdressRu)
+                                
                                 //@ts-ignore
-                                setCurrentName(item.regionPresident)
+                                setCurrentName(t("check")?item.regionPresident:item.regionPresidentRu)
                                 //@ts-ignore
                                 setCurrentPhone(item.phoneNumber)
                                 //@ts-ignore
@@ -72,7 +72,7 @@ export function Map() {
             
                         }}
                             d={item.svgCoord}
-                            id={item.code} name={item.regionName}>
+                            id={item.code} name={t("check")?item.regionName:item.regionNameRu}>
                                 </path>)
                       }):''}
 

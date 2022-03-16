@@ -22,7 +22,7 @@ function Central() {
   </div>
   :''}
       
-          <PageTitle title={t('markaziy_kengash')}  />
+          <PageTitle title={t('markaziy_kengash1')}  />
           <div className="container">
             <div className="containerr">
             <div className="markaziy-img"></div>
