@@ -125,6 +125,7 @@
     "mg":"O'ZBEKISTON RESPUBLIKASI MILLIY GVARDIYASI",
     "iiv":"O'ZBEKISTON RESPUBLIKASI ICHKI ISHLAR VAZIRLIGI",
     "yi":"YOSHLAR ISHLARI AGENTLIGI",
+    "os":"O'ZBEKISTON RESPUBLIKASI SPORT VAZIRLIGI",
     "AVTOMAKTABLAR SONI":"AVTOMAKTABLAR SONI",
     "TASHKILOT A`ZOLARI SONI":"TASHKILOT A`ZOLARI SONI",
     "SPORTCHILAR SONI":"SPORTCHILAR SONI",
@@ -194,6 +195,7 @@
 "marr":"“Vatanparvar” tashkilotning ikkinchi asosiy yoʻnalishi aholi, ayniqsa, yoshlarni Tashkilot tizimidagi avtokross, motokross, karting, triatlon, duatlon, yozgi biatlon, pnevmatik quroldan oʻq otish, dengiz koʻpkurashi, harbiy amaliy koʻpkurash, xizmatchi itlar, aviamodel, raketamodel, kemamodel, radiosport kabi sportning texnik va amaliy turlariga jalb etish, ular orasida sogʻlom turmush tarzini targʻib qilish hisoblanadi. Hozirda “Vatanparvar” tashkiloti 9 mingga yaqin sportga qiziquvchan yoshlarni qamrab olgan. Bundan tashqari, Tashkilot tasarrufida parashyut sporti boʻyicha jami 7 ta sport seksiyalari mavjud boʻlib, ularda 117 nafar sportchi shugʻullanadi. “Vatanparvar” tashkiloti, shuningdek, Xalqaro aeronavtika federatsiyasi (FAI), Xalqaro kemamodeli uyushmasi (“NAVIGA”), Xalqaro triatlon uyushmasi (ITU), Xalqaro biatlon uyushmasi (IBU) hamda Osiyo triatlon konfederatsiyasi (ASTC)ning toʻla huquqli doimiy aʼzosi hisoblanadi.",
 "mart":"Tashkilotning asosiy uchinchi yoʻnalishi fuqarolarni ommaviy texnik kasblarga tayyorlash hisoblanadi. Respublika miqyosida Tashkilot tasarrufidagi 211 ta oʻquv sport texnika klublarining avtomototransport haydovchilarini tayyorlash kurslarida bir yilda oʻrtacha 120-130 ming nafar fuqaro oʻqitiladi. Bundan tashqari, “2021 yil – Yoshlarni qoʻllab-quvvatlash va aholi salomatligini mustahkamlash yili” munosabati qabul qilingan Davlat dasturiga muvofiq, Oʻzbekiston Respublikasi mudofaasiga koʻmaklashuvchi “Vatanparvar” tashkiloti zimmasiga Tashkilot bazasida yoshlarni mehnat bozorida talab yuqori boʻlgan yana 10 xil kasblarga oʻqitishni taʼminlash boʻyicha masʼuliyatli vazifa yuklatildi.",
 "mary":"Davlat dasturiga muvofiq, 2021 yilning iyun oyidan boshlab “Vatanparvar” tashkiloti tizimida “Texnik xizmat koʻrsatish mutaxassislarini tayyorlash kurslari” tashkil etilib, unda yoshlar 5 xil kasbga – vulkanizatorchi, elektrik-akkumulyatorchi, gaz-elektr payvandchi, avtochilangar, avtoelektrik mutaxassisliklari boʻyicha hamda sentabr oyidan boshlab “Murakkab texnikalarni boshqarish mutaxassislarini tayyorlash kurslari” yoʻlga qoʻyilib, ushbu kurslarda yuk ortuvchi transport, avtogidro-podʼyomnik, yuk mashinasi krani, gʻildirakli traktor, bitta kovshli ekskavator texnikalarini boshqarish boʻyicha mutaxassislar tayyorlash yoʻlga qoʻyildi.",
+"ruleq":"Vatanparvar tashkilotining ustavi",
 "rulew":"PQ-4061 o'zb",
 "rulee":"PP-4061 rus",
  "Qoraqalpog'iston":"Qoraqalpog'iston",
@@ -284,10 +286,8 @@
 "Tashkilot hisob raqami":"Tashkilot hisob raqami",
 "INN":"INN",
 "MFO":"MFO",
-"Pochta indeks":"Pochta indeks",
+"Pochta indeks":"Pochta indeks"
 
-"os":"O'ZBEKISTON RESPUBLIKASI SPORTNI RIVOJLANTIRISH VAZIRLIGI",
-"ruleq":"“Vatanparvar” tashkiloti ustavini yuklab olish"
 
 
 } 
