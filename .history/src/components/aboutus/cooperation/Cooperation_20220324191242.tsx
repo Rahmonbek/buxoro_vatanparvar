@@ -177,7 +177,7 @@ itemClass="carousel-item-padding-40-px"
 </div>
 
 </Carousel>
-<br/><br/><br/> */}
+<br/> */}
 
                 
               </div>
@@ -373,7 +373,7 @@ itemClass="carousel-item-padding-40-px"
   </div>
 
 </Carousel>
-<br/><br/><br/>
+<br/>
 <br/>
 <PageTitle title={t("Kasbga tayyorlash")}/>
               <Carousel
@@ -562,7 +562,7 @@ itemClass="carousel-item-padding-40-px"
   </div>
 
 </Carousel>
-<br/><br/><br/>
+<br/>
 <br/>
 <PageTitle title={t("Sport to'garaklari")}/>
               <Carousel
@@ -751,7 +751,7 @@ itemClass="carousel-item-padding-40-px"
   </div>
 
 </Carousel>
-<br/><br/><br/><br/>
+<br/><br/>
               <br/>
                   <br/>
 <br/></div>
