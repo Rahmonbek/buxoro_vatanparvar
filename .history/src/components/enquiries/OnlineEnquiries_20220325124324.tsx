@@ -304,7 +304,7 @@ const checkOt=(value:any)=>{
 <MaskedInput className='in' mask="(11) 111 11 11" onChange={(e)=>{checkphone(e)}}  addonBefore="+998"   placeholder={t("Telefon raqam")}/>
 
 </Form.Item>
-<Form.Item label=" " data-placeholder={t("E-mail")} tooltip={{ title: t("Email manzilni to'g'ri kriting"), icon:  <QuestionOutlined style={{color:'white'}} /> }}   className={`myFor in ${emailClass?"forPlace":''}`} name='email' rules={[{ required: true, type: 'email',  message: t("check")?`${t("E-mail")}${t("ni kirtishingiz shart")}`:`${t("ni kirtishingiz shart")} ${t("E-mail")}`}]}>
+<Form.Item label=" " data-placeholder={t("E-mail")} tooltip={{ title: t("email "), icon:  <QuestionOutlined style={{color:'white'}} /> }}   className={`myFor in ${emailClass?"forPlace":''}`} name='email' rules={[{ required: true, type: 'email',  message: t("check")?`${t("E-mail")}${t("ni kirtishingiz shart")}`:`${t("ni kirtishingiz shart")} ${t("E-mail")}`}]}>
         <Input style={{textTransform:'lowercase'}}  className="in1 ot" id="em" onChange={(e)=>{checkEmail(e)}} placeholder={t("E-mail")}/>
       </Form.Item> 
       <Form.Item data-placeholder={t("Viloyat")} className={`myFor ${regionsClass?"forPlace":''}`}  label=" "  tooltip={{ title: t("Viloyatni e'tibor bilan tanlang") , icon: <QuestionOutlined style={{color:'white'}} /> }} name="regionId"   rules={[{ required: true, message: t("check")?`${t("Viloyat")}${t("ni tanlashingiz shart")}`:`${t("ni tanlashingiz shart")} ${t("Viloyat")}` }]}>
@@ -322,7 +322,7 @@ const checkOt=(value:any)=>{
     </Form.Item>
 </Col>
 <Col lg={24} md={24} sm={24} style={{padding:'0px 20px'}}  className={text?"salom":''}>
-<Form.Item  data-placeholder={t("Murojaat matni")} className={`myFor1 in ${textClass?"forPlace1":''}`} tooltip={{ title: t("Murajatni ko'proq yoriting"), icon:  <QuestionOutlined style={{color:'white'}} /> }}   style={{width:'100%'}} >
+<Form.Item  data-placeholder={t("Murojaat matni")} className={`myFor1 in ${textClass?"forPlace1":''}`} tooltip={{ title: "Lotin tilida yozing", icon:  <QuestionOutlined style={{color:'white'}} /> }}   style={{width:'100%'}} >
 <div className="dateTool">
      <Tooltip placement="top" title={t("Murojaatni ko'proq yoriting")}>
 <QuestionOutlined />  </Tooltip>

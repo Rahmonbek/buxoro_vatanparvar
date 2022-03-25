@@ -322,7 +322,7 @@ const checkOt=(value:any)=>{
     </Form.Item>
 </Col>
 <Col lg={24} md={24} sm={24} style={{padding:'0px 20px'}}  className={text?"salom":''}>
-<Form.Item  data-placeholder={t("Murojaat matni")} className={`myFor1 in ${textClass?"forPlace1":''}`} tooltip={{ title: t("Murajatni ko'proq yoriting"), icon:  <QuestionOutlined style={{color:'white'}} /> }}   style={{width:'100%'}} >
+<Form.Item  data-placeholder={t("Murojaat matni")} className={`myFor1 in ${textClass?"forPlace1":''}`} tooltip={{ title: t("Murajatni ko'pro"), icon:  <QuestionOutlined style={{color:'white'}} /> }}   style={{width:'100%'}} >
 <div className="dateTool">
      <Tooltip placement="top" title={t("Murojaatni ko'proq yoriting")}>
 <QuestionOutlined />  </Tooltip>

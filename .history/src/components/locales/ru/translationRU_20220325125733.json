@@ -238,7 +238,15 @@
  "Toifa turi":"Тип категории",
  "Ta'lim vaqti":"Время обучения",
  "E-mail":"Электронная почта",
+"Murojaat matni":"Текст обращения",
+"Murojaatni ko'proq yoriting":"Введите текст обращения ",
 
+"Lotin tilida yozing": "Написать латиницей",
+"Telefon raqamni ko'rsatilgan formatda kiriting": "Введите номер телефона в указанном формате",
+"Viloyatni e'tibor bilan tanlang": "Вы не можете выбрать другой регион, потому что вы находитесь на веб-сайте этого конкретного региона.",
+"Avval viloyat tanlang": "Внимательно выбирайте регион",
+"Avval tuman tanlang": "Сначала выбрать район",
+"Avval avtomaktab tanlang": "Сначала выберите автошколу",
 "O'zingizga mos ta'lim vaqtini tanlang": "Выберите правильное время обучения",
 "O'zingizga mos ta'lim yo'nalishini tanlang": "Выберите направление обучения, которое вам подходит",
 "check":false,
@@ -298,17 +306,7 @@
 "Kasbga tayyorlash": "Профессиональное обучение",
 "Sport to'garaklari": "Спортивные клубы",
 
-"Email manzilni to'g'ri kriting": "Правильно введите адрес электронной почты",
-
-"Murojaat matni":"Текст обращения",
-"Murojaatni ko'proq yoriting":"Введите текст обращения",
-
-"Lotin tilida yozing": "Напишите на латинице",
-"Telefon raqamni ko'rsatilgan formatda kiriting": "Введите номер телефона в указанном формате",
-"Viloyatni e'tibor bilan tanlang": "Вы не можете выбрать другой регион, потому что вы находитесь на веб-сайте этого региона.",
-"Avval viloyat tanlang": "Внимательно выберите регион",
-"Avval tuman tanlang": "Сначала выберите район",
-"Avval avtomaktab tanlang": "Сначала выберите автошколу"
+"Email manzilni to'g'ri kriting": "Правильно введите адрес электронной почты"
 
 
 
