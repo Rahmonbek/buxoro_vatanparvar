@@ -7,7 +7,7 @@ export default class Error extends Component {
       <div className='error'>
         <img className='log' src={logo}/>
         <img className="bk" src="https://vatanparvar.uz/img/error.svg"/>
-        <img className="bk1" src="https://vatanparvar.uz/img/error2.svg"/>
+        <img className="bk" src="https://vatanparvar.uz/img/error1.svg"/>
       </div>
     )
   }

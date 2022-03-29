@@ -5,9 +5,8 @@ export default class Error extends Component {
   render() {
     return (
       <div className='error'>
-        <img className='log' src={logo}/>
-        <img className="bk" src="https://vatanparvar.uz/img/error.svg"/>
-        <img className="bk1" src="https://vatanparvar.uz/img/error2.svg"/>
+        <img src={logo}/>
+        <img src=""/>
       </div>
     )
   }
