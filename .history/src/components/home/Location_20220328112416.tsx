@@ -13,8 +13,7 @@ import { YMaps, Map, Placemark, FullscreenControl, GeolocationControl, RouteButt
 import { useTranslation } from 'react-i18next';
 import "./assets/location.scss";
 import http from '../ui/Services';
-import { api, region, url } from '../../host';
-
+import { region } from '../../host';
 
 function Location() {
     const {t} = useTranslation();
@@ -58,7 +57,7 @@ function Location() {
                     </div>    
                     <div className="location-info-document">
                         <HiOutlineDocumentDownload className="icon" size="2.1rem" color="#133165" cursor="pointer"/>
-                        <a href={`${api}Files/BUXORO.docx`} target="_blank">{t("Rekvizitlar")}</a>  
+                        <a href={`BUXORO.docx"} target="_blank">{t("Rekvizitlar")}</a>  
                     </div>     
                     <div className="location-info-social" style={{marginTop:'30px'}}>
                        <a target="_blank" href="https://www.facebook.com/Mudofaaga-komaklashuvchi-Vatanparvar-tashkiloti-108212348006242" className="location-info-social-item_item" >

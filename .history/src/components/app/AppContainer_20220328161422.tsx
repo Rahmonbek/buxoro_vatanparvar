@@ -26,7 +26,6 @@ import Subsidiaries from '../aboutus/subsidiaries/Subsidiaries';
 import Documents from '../d-ocuments/Documents';
 import ToDrivingSchool from '../enquiries/ToDrivingSchool';
 import OnlineEnquiries from '../enquiries/OnlineEnquiries';
-import Error from './Error';
 
 
 export function AppContainer() {
@@ -34,7 +33,7 @@ export function AppContainer() {
         <div className="wrapper app">
             <AppNavbar />
             <main className="main"> <Routes>
-            <Route path='*' element={<Error />} />
+            <Route path='*' element={<NotFound />} />
                 <Route path="/allnews/:id" element={<OpenNews />} />
                 <Route path="/" element={<Home />}></Route>
                 <Route path="/markaziy-kengash" element={<Central />} />
