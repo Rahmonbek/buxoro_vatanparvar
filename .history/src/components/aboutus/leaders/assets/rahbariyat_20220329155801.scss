@@ -170,11 +170,10 @@
 .sug{position: relative;}
 .sug .web{position: absolute; bottom:35px; right: 20px;}
 .sal:hover{transform: scale(1) !important; cursor: context-menu !important; }
-@media(max-width:1160px){
+@media(max-width:1150px){
     .img{width:100% !important; height:auto !important}
     .img1{width:100% !important; height:auto !important}
     .content-wrapper{height:666px !important;}
- 
 }
 @media(max-width:768px){
     .img{width:100% !important; height:auto !important}
