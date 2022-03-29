@@ -116,7 +116,7 @@ useEffect(()=>{
                               <div style={{zIndex:-1}} className={style.headId}>{1}</div>
                               <div style={{zIndex:-1}} className={style.headName}><BsBuilding color="#133165"/>  {regionD.length!==0?t('check')?regionD[index - 1][0].regionName:regionD[index - 1][0].regionNameRu:''}</div>
                              </div>}>
-                             <Row  style={{paddingLeft:"calc(5%)", paddingRight:'5%'}}>
+                             <Row>
 <Col style={{padding:'10px'}} className="colAcc" lg={8} md={12} sm={24}>
   <BsPerson size='1.3rem'  color="#133165" /><span className="salomText">{regionD.length!==0?t('check')?(regionD[index - 1][0].regionPresident && regionD[index - 1][0].regionPresident!==null?regionD[index - 1][0].regionPresident:regionD[index - 1][0].regionPresidentRu && regionD[index - 1][0].regionPresidentRu!==null?regionD[index - 1][0].regionPresidentRu:<span style={{color:'#a2a0a0'}}>{t("Ma'lumot mavjud emas")}</span>):regionD[index - 1][0].regionPresidentRu && regionD[index - 1][0].regionPresidentRu!==null?regionD[index - 1][0].regionPresidentRu:regionD[index - 1][0].regionPresident && regionD[index - 1][0].regionPresident!==null?regionD[index - 1][0].regionPresident:<span style={{color:'#a2a0a0'}}>{t("Ma'lumot mavjud emas")}</span>:''}</span>
   </Col>
@@ -158,7 +158,7 @@ useEffect(()=>{
                                 <div style={{zIndex:-1}} className="headId">{key+2}</div>
                                 <div style={{zIndex:-1}} className="headName"><BsBuilding color="#133165"/> {t('check')?item.branchName:item.branchNameRu}</div>
                               </div>}>
-  <Row style={{paddingLeft:"calc(5%)", paddingRight:'5%'}}>
+  <Row>
   <Col style={{padding:'10px'}} className="colAcc" lg={8} md={12} sm={24}>
   <BsPerson size='1.3rem'  color="#133165" /><span className="salomText"> {t('check')?item.branchPresident===null?<span style={{color:'#a2a0a0'}}>{t("Ma'lumot mavjud emas")}</span>:item.branchPresident:item.branchPresidentRu===null?<span style={{color:'#a2a0a0'}}>{t("Ma'lumot mavjud emas")}</span>:item.branchPresidentRu}</span>
   </Col>
@@ -251,7 +251,7 @@ useEffect(()=>{
                               <div style={{zIndex:-1}} className={style.headPhone}>{regionD.length!==0?regionD[index - 1][0].phoneNumber===null?"-":regionD[index - 1][0].phoneNumber:''}</div>
                               <div style={{zIndex:-1}} className={style.headEmail}>{regionD.length!==0?regionD[index - 1][0].email==="null"?"-":regionD[index - 1][0].email:''}</div>
                             </div>}>
-                            <Row style={{paddingLeft:"calc(5% + 22px)"}}>
+                            <Row>
                             <Col className="colAcc" lg={8} md={12} sm={24}>
 <Tooltip placement="left" title={t("Bank nomi")}><RiBankFill  color="#133165" size='1.4rem' /> <span className="salomText">{regionD.length!==0?t('check')?(regionD[index - 1][0].bankName && regionD[index - 1][0].bankName!==null?regionD[index - 1][0].bankName:regionD[index - 1][0].bankNameRu && regionD[index - 1][0].bankNameRu!==null?regionD[index - 1][0].bankNameRu:<span style={{color:'#a2a0a0'}}>{t("Ma'lumot mavjud emas")}</span>):regionD[index - 1][0].bankNameRu && regionD[index - 1][0].bankNameRu!==null?regionD[index - 1][0].bankNameRu:regionD[index - 1][0].bankName && regionD[index - 1][0].bankName!==null?regionD[index - 1][0].bankName:<span style={{color:'#a2a0a0'}}>{t("Ma'lumot mavjud emas")}</span>:''}</span></Tooltip>
   </Col>
@@ -286,7 +286,7 @@ useEffect(()=>{
                               <div style={{zIndex:-1}} className={style.headPhone}>{item.phoneNumber===null?"-":item.phoneNumber}</div>
                               <div style={{zIndex:-1}} className={style.headEmail}>{item.email==="null"?"-":item.email}</div>
                             </div>}>
-                            <Row style={{paddingLeft:"calc(5% + 22px)"}}>
+                            <Row>
                             <Col className="colAcc" lg={8} md={12} sm={24}>
 <Tooltip placement="left" title={t("Bank nomi")}><RiBankFill  color="#133165" size='1.3rem' /> <span className="salomText">{t('check')?(item.bankName && item.bankName!==null?item.bankName:item.bankNameRu && item.bankNameRu!==null?item.bankNameRu:<span style={{color:'#a2a0a0'}}>{t("Ma'lumot mavjud emas")}</span>):item.bankNameRu && item.bankNameRu!==null?item.bankNameRu:item.bankName && item.bankName!==null?item.bankName:<span style={{color:'#a2a0a0'}}>{t("Ma'lumot mavjud emas")}</span>}</span></Tooltip>
   </Col>
