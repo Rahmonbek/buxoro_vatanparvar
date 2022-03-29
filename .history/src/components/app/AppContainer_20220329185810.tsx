@@ -35,7 +35,6 @@ export function AppContainer() {
             <AppNavbar />
             <main className="main"> <Routes>
             <Route path='*' element={<Error />} />
-  
                 <Route path="/allnews/:id" element={<OpenNews />} />
                 <Route path="/" element={<Home />}></Route>
                 <Route path="/markaziy-kengash" element={<Central />} />

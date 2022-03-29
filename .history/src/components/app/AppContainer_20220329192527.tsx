@@ -58,7 +58,7 @@ export function AppContainer() {
                 <Route path="/yoshlarga-va-fuqorolarga-mudofaa-sohasida" element={<FourthPage />} />
                 <Route path="/sportning-texnik-va-amaliy" element={<Fifthpage />} />
             </Routes></main>
-            <AppFooter />
+            {/* <AppFooter /> */}
         </div>
     );
 }

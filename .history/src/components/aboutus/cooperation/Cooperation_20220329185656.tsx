@@ -54,7 +54,7 @@ function Cooperation() {
       <div className="hamkorlik" onLoad={()=>{loaderT()}}>
       {loader?<div className="loaderG">
       <div className="befG">
-  <img src={logo} alt="..."/>
+  <img alt="..." src={logo} alt="..."/>
   </div>
   
   </div>

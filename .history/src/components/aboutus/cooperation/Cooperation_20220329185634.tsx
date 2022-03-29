@@ -316,7 +316,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img src={card1} alt="..."/>
+<img src={card1}/>
 
 
 </div>
@@ -335,7 +335,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img alt="..." src={card1}/>
+<img src={card1}/>
 
 
 </div>
@@ -372,7 +372,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img alt="..." src={card1}/>
+<img src={card1}/>
 
 
 </div>
@@ -391,7 +391,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img alt="..." src={card1}/>
+<img src={card1}/>
 
 
 </div>
@@ -410,7 +410,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img alt="..." src={card1}/>
+<img src={card1}/>
 
 
 </div>
@@ -429,7 +429,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img alt="..." src={card1}/>
+<img src={card1}/>
 
 
 </div>
@@ -448,7 +448,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img alt="..." src={card1}/>
+<img src={card1}/>
 
 
 </div>
@@ -467,7 +467,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img alt="..." src={card1}/>
+<img src={card1}/>
 
 
 </div>
@@ -486,7 +486,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img alt="..." src={card1}/>
+<img src={card1}/>
 
 
 </div>
@@ -505,7 +505,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img alt="..." src={card1}/>
+<img src={card1}/>
 
 
 </div>
@@ -524,7 +524,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img alt="..." src={card1}/>
+<img src={card1}/>
 
 
 </div>
@@ -561,7 +561,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img alt="..." src={card1}/>
+<img src={card1}/>
 
 
 </div>
@@ -580,7 +580,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img alt="..." src={card1}/>
+<img src={card1}/>
 
 
 </div>
@@ -599,7 +599,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img alt="..." src={card1}/>
+<img src={card1}/>
 
 
 </div>
@@ -618,7 +618,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img alt="..." src={card1}/>
+<img src={card1}/>
 
 
 </div>
@@ -637,7 +637,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img alt="..." src={card1}/>
+<img src={card1}/>
 
 
 </div>
@@ -656,7 +656,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img alt="..." src={card1}/>
+<img src={card1}/>
 
 
 </div>
@@ -675,7 +675,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img alt="..." src={card1}/>
+<img src={card1}/>
 
 
 </div>
@@ -694,7 +694,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img alt="..." src={card1}/>
+<img src={card1}/>
 
 
 </div>
@@ -713,7 +713,7 @@ itemClass="carousel-item-padding-40-px"
     <div className={style.card1}>
       {/* <div className={style.lenta}>Chegirma !!!</div> */}
 <div className={style.img1}>
-<img alt="..." src={card1}/>
+<img src={card1}/>
 
 
 </div>

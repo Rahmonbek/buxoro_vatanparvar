@@ -9,6 +9,7 @@ import { NavLink } from "react-router-dom";
 import { SettingsModal } from '@n3/react-vision-panel';
 import { BsFillEyeFill } from "react-icons/bs";
 import { useTranslation } from 'react-i18next';
+import {Modal} from "react-bootstrap"
 
 export function AppNavbar() {
     const [open, setOpen] = useState(false);
@@ -87,7 +88,7 @@ setisovv(false)
                     <ul className="app_nav-list">
                         <li className="app_nav-list_item with_sublist">
 
-                            <p  className={isbiz_haqimizda?"active":''}><a className="app_nav-list_link">{t('biz_haqimizda')}</a> </p>
+                            <p  className={isbiz_haqimizda?"active":''}><a className="app_nav-list_link" href="#">{t('biz_haqimizda')}</a> </p>
                             <ul className="app_nav-sub_list"> 
                             <div className='chiz1'></div>
 
@@ -96,37 +97,37 @@ setisovv(false)
                                     <NavLink onClick={()=>{setFalse();setisbiz_haqimizda(true);setisActivemarkaziy(true) }} className={isActivemarkaziy?"active":''}  to="/markaziy-kengash"><a className="app_nav-sub_list-link" href="../home/Markaziy">{t('markaziy_kengash')}</a></NavLink>
                                 </li>
                                 <li className="app_nav-sub_list-item" onClick={closeNavbar}>
-                                    <NavLink onClick={()=>{setFalse();setisbiz_haqimizda(true);setisActiverahbariyat(true) }} className={isActiverahbariyat?"active":''}  to="/rahbariyat"> <a className="app_nav-sub_list-link">{t('rahbariyat')}</a></NavLink>
+                                    <NavLink onClick={()=>{setFalse();setisbiz_haqimizda(true);setisActiverahbariyat(true) }} className={isActiverahbariyat?"active":''}  to="/rahbariyat"> <a className="app_nav-sub_list-link" href="#">{t('rahbariyat')}</a></NavLink>
                                 </li>
                                 <li className="app_nav-sub_list-item" onClick={closeNavbar}>
-                                    <NavLink onClick={()=>{setFalse();setisbiz_haqimizda(true);setisActivemarkaziy_aparat(true) }} className={isActivemarkaziy_aparat?"active":''}  to="/markaziy-aparat" > <a className="app_nav-sub_list-link">{t('markaziy_aparat')}</a></NavLink>
+                                    <NavLink onClick={()=>{setFalse();setisbiz_haqimizda(true);setisActivemarkaziy_aparat(true) }} className={isActivemarkaziy_aparat?"active":''}  to="/markaziy-aparat" > <a className="app_nav-sub_list-link" href="#">{t('markaziy_aparat')}</a></NavLink>
                                 </li>
                                
                                 {/* <li className="app_nav-sub_list-item" onClick={closeNavbar}>
-                                    <NavLink onClick={()=>{setFalse();setisbiz_haqimizda(true);setisActivehududiy(true) }} className={isActivehududiy?"active":''}  to="/hududiy-kengashlar"><a className="app_nav-sub_list-link">{t('hududiy_kengashlar')}</a></NavLink>
+                                    <NavLink onClick={()=>{setFalse();setisbiz_haqimizda(true);setisActivehududiy(true) }} className={isActivehududiy?"active":''}  to="/hududiy-kengashlar"><a className="app_nav-sub_list-link" href="#">{t('hududiy_kengashlar')}</a></NavLink>
                                 </li> */}
                                 {/* <li className="app_nav-sub_list-item" onClick={closeNavbar}>
-                                    <NavLink onClick={()=>{setFalse();setisbiz_haqimizda(true);setisActivetashkilot(true) }} className={isActivetashkilot?"active":''}  to="/tashkilot-tarixi" > <a className="app_nav-sub_list-link">{t('tashkilot_tarixi')}</a></NavLink>
+                                    <NavLink onClick={()=>{setFalse();setisbiz_haqimizda(true);setisActivetashkilot(true) }} className={isActivetashkilot?"active":''}  to="/tashkilot-tarixi" > <a className="app_nav-sub_list-link" href="#">{t('tashkilot_tarixi')}</a></NavLink>
                                 </li> */}
                                 {/* <li className="app_nav-sub_list-item" onClick={closeNavbar}>
-                                    <NavLink onClick={()=>{setFalse();setisbiz_haqimizda(true);setisActivexalqaro(true) }} className={isActivexalqaro?"active":''}  to="/xalqaro-hamkorlik">  <a className="app_nav-sub_list-link" dangerouslySetInnerHTML={{ __html: t("xalqaro_hamkorlik") }}></a></NavLink>
+                                    <NavLink onClick={()=>{setFalse();setisbiz_haqimizda(true);setisActivexalqaro(true) }} className={isActivexalqaro?"active":''}  to="/xalqaro-hamkorlik">  <a className="app_nav-sub_list-link" href="#" dangerouslySetInnerHTML={{ __html: t("xalqaro_hamkorlik") }}></a></NavLink>
                                 </li> */}
                             </ul>
                         </li>
                         <li className="app_nav-list_item with_sublist">
-                            <p  className={isaxborot_xizmati?"active":''}><a className="app_nav-list_link">{t('axborot_xizmati')}</a></p>
+                            <p  className={isaxborot_xizmati?"active":''}><a className="app_nav-list_link" href="#">{t('axborot_xizmati')}</a></p>
                             <ul className="app_nav-sub_list"> 
                             <div className='chiz1'></div>
 
 <div className='chiz'></div>
                                 {/* <li className="app_nav-sub_list-item">
-                                    <a className="app_nav-sub_list-link">E'LONLAR</a>
+                                    <a className="app_nav-sub_list-link" href="#">E'LONLAR</a>
                                 </li> */}
                                 <li className="app_nav-sub_list-item" onClick={closeNavbar}>
-                                    <NavLink onClick={()=>{setFalse();setisaxborot_xizmati(true);setisActivebarcha_yangiliklar(true) }} className={isActivebarcha_yangiliklar?"active":''}  to="/allnews"><a className="app_nav-sub_list-link">{t('barcha_yangiliklar')}</a></NavLink>
+                                    <NavLink onClick={()=>{setFalse();setisaxborot_xizmati(true);setisActivebarcha_yangiliklar(true) }} className={isActivebarcha_yangiliklar?"active":''}  to="/allnews"><a className="app_nav-sub_list-link" href="#">{t('barcha_yangiliklar')}</a></NavLink>
                                 </li>
                                 <li className="app_nav-sub_list-item" onClick={closeNavbar}>
-                                    <NavLink onClick={()=>{setFalse();setisaxborot_xizmati(true);setisActivefotogalereya(true) }} className={isActivefotogalereya?"active":''}  to="/fotogalareya"><a className="app_nav-sub_list-link">{t('fotogalereya')}</a></NavLink>
+                                    <NavLink onClick={()=>{setFalse();setisaxborot_xizmati(true);setisActivefotogalereya(true) }} className={isActivefotogalereya?"active":''}  to="/fotogalareya"><a className="app_nav-sub_list-link" href="#">{t('fotogalereya')}</a></NavLink>
                                 </li>
                                 <li className="app_nav-sub_list-item" onClick={closeNavbar}>
                                     <p  onClick={()=>{setFalse();setisaxborot_xizmati(true);setisovv(true) }} className={isovv?"active":''}><a className="app_nav-sub_list-link" href="https://www.youtube.com/channel/UCI41Xe2P3GPUz5YK-TzEJZg" target="_blank">{t('ovv_biz_haqimizda')}</a></p>
@@ -134,29 +135,29 @@ setisovv(false)
                             </ul>
                         </li>
                         {/* <li className="app_nav-list_item" onClick={closeNavbar}>
-                            <NavLink onClick={()=>{setFalse();setisActivehujjatlar(true) }} className={isActivehujjatlar?"active":''}  to="/hujjatlar"><a className="app_nav-list_link">{t('hujjatlar')}</a></NavLink>
+                            <NavLink onClick={()=>{setFalse();setisActivehujjatlar(true) }} className={isActivehujjatlar?"active":''}  to="/hujjatlar"><a className="app_nav-list_link" href="#">{t('hujjatlar')}</a></NavLink>
                         </li> */}
                          <li className="app_nav-list_item" onClick={closeNavbar}>
-                                    <NavLink onClick={()=>{setFalse();setisActivetassarufidagi(true) }} className={isActivetassarufidagi?"active":''}  to="/filiallar"><a className="app_nav-list_link" dangerouslySetInnerHTML={{ __html: t("tassarufidagi_tashkilotlar") }}></a></NavLink>
+                                    <NavLink onClick={()=>{setFalse();setisActivetassarufidagi(true) }} className={isActivetassarufidagi?"active":''}  to="/filiallar"><a className="app_nav-list_link" href="#" dangerouslySetInnerHTML={{ __html: t("tassarufidagi_tashkilotlar") }}></a></NavLink>
                                 </li>
                                 <li className="app_nav-list_item" onClick={closeNavbar}>
-                            <NavLink onClick={()=>{setFalse();setisActivekantaktlar(true) }} className={isActivekantaktlar?"active":''}  to="/kontaktlar"><a className="app_nav-list_link">{t('kantaktlar')}</a></NavLink>
+                            <NavLink onClick={()=>{setFalse();setisActivekantaktlar(true) }} className={isActivekantaktlar?"active":''}  to="/kontaktlar"><a className="app_nav-list_link" href="#">{t('kantaktlar')}</a></NavLink>
                         </li>
                        
                         <li className="app_nav-list_item with_sublist">
-                            <p  className={ismurojat_qilish?"active":''}><a className="app_nav-list_link">{t('murojat_qilish')}</a></p>
+                            <p  className={ismurojat_qilish?"active":''}><a className="app_nav-list_link" href="#">{t('murojat_qilish')}</a></p>
                             <ul className="app_nav-sub_list"> 
                             <div className='chiz1'></div>
 
 <div className='chiz'></div>
                                 <li className="app_nav-sub_list-item" onClick={closeNavbar}>
-                                    <NavLink onClick={()=>{setFalse();setismurojat_qilish(true);setisActiveonlayn(true) }} className={isActiveonlayn?"active":''}  to="/onlayn-murojat"><a className="app_nav-sub_list-link">{t('onlayn_murojat')}</a></NavLink>
+                                    <NavLink onClick={()=>{setFalse();setismurojat_qilish(true);setisActiveonlayn(true) }} className={isActiveonlayn?"active":''}  to="/onlayn-murojat"><a className="app_nav-sub_list-link" href="#">{t('onlayn_murojat')}</a></NavLink>
                                 </li>
                                 <li className="app_nav-sub_list-item" onClick={closeNavbar}>
-                                    <NavLink onClick={()=>{setFalse();setismurojat_qilish(true);setisActiveh(true) }} className={isActiveh?"active":''}  to="/haydovchilik-maktabiga-yozilish"><a className="app_nav-sub_list-link">{t('h_maktabga')}</a></NavLink>
+                                    <NavLink onClick={()=>{setFalse();setismurojat_qilish(true);setisActiveh(true) }} className={isActiveh?"active":''}  to="/haydovchilik-maktabiga-yozilish"><a className="app_nav-sub_list-link" href="#">{t('h_maktabga')}</a></NavLink>
                                 </li>
                                 <li className="app_nav-sub_list-item" onClick={closeNavbar}>
-                                    <NavLink onClick={()=>{setFalse();setismurojat_qilish(true);setisActivek(true) }} className={isActivek?"active":''}  to="/kasb-hunar-maktabiga-yozilish"> <a className="app_nav-sub_list-link" dangerouslySetInnerHTML={{ __html: t("k_maktabga") }}></a></NavLink>
+                                    <NavLink onClick={()=>{setFalse();setismurojat_qilish(true);setisActivek(true) }} className={isActivek?"active":''}  to="/kasb-hunar-maktabiga-yozilish"> <a className="app_nav-sub_list-link" href="#" dangerouslySetInnerHTML={{ __html: t("k_maktabga") }}></a></NavLink>
                                 </li>
                             </ul>
                         </li>

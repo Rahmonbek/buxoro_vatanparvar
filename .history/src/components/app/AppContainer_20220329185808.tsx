@@ -17,7 +17,7 @@ import ThirdPage from '../home/activity/ThirdPage';
 import FourthPage from '../home/activity/FourthPage';
 import Fifthpage from '../home/activity/Fifthpage';
 import OpenNews from '../information/allnews/OpenNews';
-// import Regions from '../aboutus/regions/Regions';
+import Regions from '../aboutus/regions/Regions';
 import Cooperation from '../aboutus/cooperation/Cooperation';
 import Central from '../aboutus/central/Central';
 import Leaders from '../aboutus/leaders/Leaders';
@@ -35,7 +35,6 @@ export function AppContainer() {
             <AppNavbar />
             <main className="main"> <Routes>
             <Route path='*' element={<Error />} />
-  
                 <Route path="/allnews/:id" element={<OpenNews />} />
                 <Route path="/" element={<Home />}></Route>
                 <Route path="/markaziy-kengash" element={<Central />} />

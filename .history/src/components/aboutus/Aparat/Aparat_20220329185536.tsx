@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { PageTitle } from "../../ui/PageTitle";
 
+
 import { HiOutlineMail } from "react-icons/hi";
 import { FiPhone } from "react-icons/fi";
 import { FaRegCalendarCheck } from "react-icons/fa";
@@ -11,7 +12,7 @@ import logo from './assets/logo.gif'
 import { useTranslation } from 'react-i18next';
 import http from "../../ui/Services";
 import { MdLanguage } from "react-icons/md";
-import { urlPer } from "../../../host";
+import { region, urlPer } from "../../../host";
 //@ts-ignore
 function Leaders() {
   const {t} = useTranslation();
@@ -21,7 +22,7 @@ function Leaders() {
      
   }
   useEffect(()=>{
-    http.get<any>(`GetApi/GetRegionContacts`)
+    http.get<any>(`/GetApi/Personal/?id=2&regionId=${region}`)
         
     .then((res) => {console.log(res.data); setData(res.data); setTimeout(()=>{
       setLoader(false)
@@ -39,7 +40,7 @@ function Leaders() {
 </div>
 :''}
       <div className="container">
-      <PageTitle title={t('hududiy_kengashlar')} />
+      <PageTitle title={t('markaziy_aparat')} />
         <div className="rahbariyat-info">
         
         {data!==null?data.map((item:any, index:any)=>{
@@ -48,33 +49,31 @@ function Leaders() {
               
              <div className="content-wrapper">
              <div className="rahbariyat-list-text" style={{display:"flex", padding:'0px', alignItems:'flex-start', justifyContent:'center'}}> 
-              <Image className="img1" src={`${urlPer}/${item.photo}`} alt="img" />
+              <Image  className="img" src={`${urlPer}/${item.photo}`} alt="img" />
               </div>
               <div className="rahbariyat-list-text">
                 <p  className="rahbariyat-list-text-position">
                   <b>
-                              {t('check')?item.regionPresident:item.regionPresidentRu}
+                              {t('check')?item.fullNameUz:item.fullNameRu}
                 </b></p>
   
                 <p  className="rahbariyat-list-text-name">
-                {t('check')?item.regionName:item.regionNameRu}
+                {t('check')?item.positionUz:item.positionRu}
                 </p>
-                <div className="icons" style={{marginTop:'-10px'}}>
+                <div className="icons" style={{marginTop:'20px'}}>
                   <FaRegCalendarCheck  className="icon"  size="1.5rem" color="#244BA4" cursor="pointer"/>
                   <p  style={{position:'relative', top:'-14px'}}>{t('check')?item.openDaysUz:item.openDaysRu}</p>
                 </div>
                 <div className="icons">
                   <FiPhone className="icon"  size="1.5rem" color="#244BA4" cursor="pointer"/>
-                  <p  style={{position:'relative', top:'-14px'}}><a href={`tel: ${item.phoneNumber}`}>{item.phoneNumber}</a></p>
+                  <p  style={{position:'relative', top:'-14px'}}><a href={`tel: ${item.phone}`}>{item.phone}</a></p>
                 </div>
                 <div className="icons">
                   <HiOutlineMail className="icon iconn" size="1.5rem" color="#244BA4" cursor="pointer"/>
                   <p  style={{position:'relative', top:'-14px'}}><a href={`mailto: ${item.email}`}>{item.email}</a></p>
                 </div>
-                <div className="web" style={{height:'40px'}}>
-                <MdLanguage className="icon" size="1.5rem" color="#244BA4" cursor="pointer"/>
-                <p    style={{position:'relative', top:'-14px'}}><a href={`https://www.${item.webSite}`}>{item.webSite}</a></p>
-              </div>
+              
+                
               </div>
               </div> 
             </div>

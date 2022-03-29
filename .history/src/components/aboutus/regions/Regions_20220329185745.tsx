@@ -69,7 +69,7 @@ function Leaders() {
                 </div>
                 <div className="icons">
                   <HiOutlineMail className="icon iconn" size="1.5rem" color="#244BA4" cursor="pointer"/>
-                  <p  style={{position:'relative', top:'-14px'}}><a href={`mailto: ${item.email}`}>{item.email}</a></p>
+                  <p  style={{position:'relative', top:'-14px'}}><a href={`mailto: ${item.email}">{item.email}</a></p>
                 </div>
                 <div className="web" style={{height:'40px'}}>
                 <MdLanguage className="icon" size="1.5rem" color="#244BA4" cursor="pointer"/>

@@ -35,7 +35,7 @@ export function AppContainer() {
             <AppNavbar />
             <main className="main"> <Routes>
             <Route path='*' element={<Error />} />
-  
+            <AppFooter />
                 <Route path="/allnews/:id" element={<OpenNews />} />
                 <Route path="/" element={<Home />}></Route>
                 <Route path="/markaziy-kengash" element={<Central />} />
@@ -58,7 +58,7 @@ export function AppContainer() {
                 <Route path="/yoshlarga-va-fuqorolarga-mudofaa-sohasida" element={<FourthPage />} />
                 <Route path="/sportning-texnik-va-amaliy" element={<Fifthpage />} />
             </Routes></main>
-            <AppFooter />
+            {/* <AppFooter /> */}
         </div>
     );
 }
