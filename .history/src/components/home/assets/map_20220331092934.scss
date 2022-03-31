@@ -2,7 +2,7 @@
     padding: 0;
     width: 100vw;
     position: relative;
-margin-bottom: 0px;
+margin-bottom: 40px;
     overflow: hidden;
 height:auto;
     &-bg {
@@ -13,8 +13,8 @@ height:auto;
     }
     &-svg {
         position: relative;
-        height: auto;
-        path {
+        height: 68vh;
+       WWW path {
             cursor: pointer;
             &:hover {
                 fill: #133165;

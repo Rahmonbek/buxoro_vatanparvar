@@ -36,7 +36,7 @@ export function Map() {
     }, [])
     
     return (
-        <div className="map" style={{position:'relative'}}>
+        <div className="map">
             <div className="map-bg">
                 <ParticlesWrapper />
             </div>

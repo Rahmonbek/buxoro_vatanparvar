@@ -4,7 +4,7 @@ import Particles from "react-tsparticles";
 export function ParticlesWrapper() {
     return (
         <Particles
-        style={{position:'static'}}
+        style={{position:'relative', top:"0px", left:'0px'}}
             className="tsparticles"
             options={{
                 fpsLimit: 60,

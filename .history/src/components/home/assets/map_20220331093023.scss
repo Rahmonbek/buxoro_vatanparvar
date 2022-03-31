@@ -2,18 +2,18 @@
     padding: 0;
     width: 100vw;
     position: relative;
-margin-bottom: 0px;
+margin-bottom: 40px;
     overflow: hidden;
 height:auto;
     &-bg {
         perspective: 10px;
         position: absolute;
         width: 100%;
-        height: 100%;
+      
     }
     &-svg {
         position: relative;
-        height: auto;
+        height: 68vh;
         path {
             cursor: pointer;
             &:hover {

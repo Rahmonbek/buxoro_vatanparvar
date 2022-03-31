@@ -25,7 +25,7 @@
   &-info {
     display: flex;
     align-items: center;
-    max-width: 385px;
+    max-width: 400px;
     width: 100%;
     gap: 10px;
     line-height: 17px;
@@ -313,6 +313,4 @@
 .app_nav-sub_list{z-index: 4445 !important;}
 @media (max-width: 400px){
   .app_nav-info{gap:5px}
-  .app_nav .container{gap:10px; padding:0px 5px}
-
 }

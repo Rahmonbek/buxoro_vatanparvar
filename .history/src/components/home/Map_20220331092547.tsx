@@ -36,9 +36,9 @@ export function Map() {
     }, [])
     
     return (
-        <div className="map" style={{position:'relative'}}>
+        <div className="map">
             <div className="map-bg">
-                <ParticlesWrapper />
+                <ParticlesWrapper style={{pos}} />
             </div>
             <div className="container">
                 <PageTitle title={t('HUDUDLAR')} />
