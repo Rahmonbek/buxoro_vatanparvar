@@ -55,29 +55,17 @@ const [region, setRegion] = useState({})
 
 
   const getRegions = (ymaps) => {
-    ["TR"].map(item=>{
-     
-      ymaps.borders
-      .load(item, {
-  quality:3,
-lang:'ru'
-      })
-      .then(function(result) {
-console.log(result)
-      })})
-
-
     if (mapRef && mapRef.current) {
       var objectManager = new ymaps.ObjectManager();
-      ["001"].map(item=>{
+      ["001", "UZ"].map(item=>{
      
         ymaps.borders
         .load(item, {
     quality:3,
-
+   lang:'ru'
         })
         .then(function(result) {
-            
+            console.log(result)
           // Очередь раскраски.
           var queue = [];
           // Создадим объект regions, где ключи это ISO код региона.

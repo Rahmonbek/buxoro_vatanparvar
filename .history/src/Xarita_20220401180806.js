@@ -55,18 +55,9 @@ const [region, setRegion] = useState({})
 
 
   const getRegions = (ymaps) => {
-    ["TR"].map(item=>{
-     
-      ymaps.borders
-      .load(item, {
-  quality:3,
-lang:'ru'
-      })
-      .then(function(result) {
-console.log(result)
-      })})
 
 
+    
     if (mapRef && mapRef.current) {
       var objectManager = new ymaps.ObjectManager();
       ["001"].map(item=>{
@@ -77,7 +68,7 @@ console.log(result)
 
         })
         .then(function(result) {
-            
+            console.log(result)
           // Очередь раскраски.
           var queue = [];
           // Создадим объект regions, где ключи это ISO код региона.
@@ -104,7 +95,7 @@ console.log(result)
             // Раскрасим регион в первый доступный цвет.
                  
             if(region.id==="UZ"){
-    
+    console.log(region)
                 region.options.fillColor = "#f330";
                 region.options.strokeColor = "#6c7e9d";
                 region.options.strokeOpacity = "1";

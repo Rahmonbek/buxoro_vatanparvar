@@ -55,18 +55,6 @@ const [region, setRegion] = useState({})
 
 
   const getRegions = (ymaps) => {
-    ["TR"].map(item=>{
-     
-      ymaps.borders
-      .load(item, {
-  quality:3,
-lang:'ru'
-      })
-      .then(function(result) {
-console.log(result)
-      })})
-
-
     if (mapRef && mapRef.current) {
       var objectManager = new ymaps.ObjectManager();
       ["001"].map(item=>{
@@ -74,7 +62,7 @@ console.log(result)
         ymaps.borders
         .load(item, {
     quality:3,
-
+    lang:'ГЯ'
         })
         .then(function(result) {
             
@@ -102,9 +90,9 @@ console.log(result)
             var region = regions[iso];
             
             // Раскрасим регион в первый доступный цвет.
-                 
+          
             if(region.id==="UZ"){
-    
+       
                 region.options.fillColor = "#f330";
                 region.options.strokeColor = "#6c7e9d";
                 region.options.strokeOpacity = "1";
@@ -181,9 +169,7 @@ setzoomA(2)
   :''}
         <>
         
-          <YMaps query={{
-      lang: t("check")?"uz":"ru"
-    }}>
+          <YMaps>
             <Map
    
          instanceRef={mapRef!==null?mapRef:{}}

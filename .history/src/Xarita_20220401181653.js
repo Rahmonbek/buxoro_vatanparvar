@@ -55,12 +55,12 @@ const [region, setRegion] = useState({})
 
 
   const getRegions = (ymaps) => {
-    ["TR"].map(item=>{
+    ["KZ"].map(item=>{
      
       ymaps.borders
       .load(item, {
   quality:3,
-lang:'ru'
+
       })
       .then(function(result) {
 console.log(result)
