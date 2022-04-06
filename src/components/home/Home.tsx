@@ -21,13 +21,7 @@ const loaderT=()=>{
 }
     return (
         <div onLoad={()=>{loaderT()}}>
-            {loader?<div className={style.loader}>
-            <div className={style.bef}>
-      <img src={logo} alt="..."/>
-      </div>
-   
-        </div>
-        :''}
+            
             <HomeHeaderSlider/>
             <Activity />
             <Statistic />

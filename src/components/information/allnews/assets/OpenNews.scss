@@ -123,4 +123,7 @@
   .open-news .swiper-slide_body{height:250px}
   .open-news .ant-row{width:100% !important}
   .yoz{display: none;}
+  .open-news .swiper-button-next,.open-news .swiper-button-prev{height:250px !important; padding-top: 40px !important;}
+  .open-news .swiper-button-next{display: flex !important; padding: 20px !important; justify-content: flex-end !important;}
+  .open-news .swiper-button-prev{display: flex !important; padding: 20px !important; justify-content: flex-start !important; }
  }

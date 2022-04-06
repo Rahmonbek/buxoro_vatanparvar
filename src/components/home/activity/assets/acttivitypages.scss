@@ -41,18 +41,18 @@
         }
         .location-info-social-item {
             &_item {
-                color: #3498db;
+                color: #133165;
                 display: flex;
                 width: 33px;
                 height: 33px;
                 justify-content: center;
                 align-items: center;
-                border: 3px solid #3498db;
+                border: 3px solid #133165;
                 border-radius: 50%;
                 transition: 0.4s;
                 &:hover {
                     transform: rotate(360deg) scale(1.2);
-                    background-color: #3498db;
+                    background-color: #133165;
                     color: #fff;
                 }
             }

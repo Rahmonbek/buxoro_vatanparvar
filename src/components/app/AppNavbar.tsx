@@ -77,7 +77,7 @@ setisovv(false)
         <nav className="app_nav">
 
             <div className="container">
-                <div className="app_nav-info">
+                <div className="app_nav-info" onClick={()=>{setFalse()}}>
                     <NavLink to="/" className="app_nav-logo">
                         <img src={Logo} alt="logo" />
                     </NavLink>

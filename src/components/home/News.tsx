@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 import http from '../ui/Services';
 import { region, url, urlV } from '../../host';
 import {Row, Col} from 'antd'
-
+import logo from './assets/logo.gif'
 import { ArrowRightOutlined } from '@ant-design/icons';
 import { AiFillRightCircle, AiOutlineEye } from 'react-icons/ai';
 import { BsFillCalendarDateFill } from 'react-icons/bs';
@@ -17,6 +17,7 @@ export function News() {
     const { t } = useTranslation();
 
     const [dataUz, setDataUz] = useState<any[]>([])
+    const [loader, setloader] = useState<any>(true)
     const [dataRu, setDataRu] = useState<any[]>([])
     const getNews = async () => {
         await http.get(`/GetApi/GetNews/?regionId=${region}`)
@@ -47,6 +48,9 @@ f.push(b[i])
                 }
                 
                 setDataRu(f.slice(0,6))
+                setTimeout(()=>{
+                    setloader(false)
+                }, 2000)
             })
             .catch(e => console.log(e))
     }
@@ -54,7 +58,14 @@ f.push(b[i])
         getNews();
     }, [])
     return (
+
         <div className="news">
+             {loader?<div className="loader">
+            <div className="bef">
+      <img src={logo} alt="..."/>
+      </div>
+   </div>
+        :
             <div className="container">
                 <PageTitle title={t('YANGILIKLAR')} />
                 {/* <div className="news_list">
@@ -163,7 +174,7 @@ f.push(b[i])
 }
 </Row>
                 <Link to="/allnews"><a  className="allnewss">{t('barcha_yangiliklarga')}</a></Link>
-            </div>
+            </div>}
         </div>
     );
 }

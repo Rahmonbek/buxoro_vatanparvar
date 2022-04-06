@@ -177,7 +177,7 @@ f.push(b[i])
               slidesPerView={1}
               spaceBetween={30}
               autoplay={{
-                delay: 5000,
+                delay: 4000,
                 disableOnInteraction: false,
               }}
               loop={true}
