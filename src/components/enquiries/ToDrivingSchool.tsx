@@ -396,7 +396,7 @@ if(Tyear-Number(year)>17){
       
             {loader?<div className="loader">
             <div className="bef">
-      <img src={logo} alt="..."/>
+      <img src="https://vatanparvar.uz/static/media/logo.b738048fbb88a43a64ff.gif" alt="..."/>
       </div>
    </div>
         :''}

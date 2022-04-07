@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from "./assets/logo.gif";
+
 import "./assets/navbar.scss";
 import { RiMenu2Line } from "react-icons/ri";
 import { GrClose } from "react-icons/gr";
@@ -79,7 +79,7 @@ setisovv(false)
             <div className="container">
                 <div className="app_nav-info" onClick={()=>{setFalse()}}>
                     <NavLink to="/" className="app_nav-logo">
-                        <img src={Logo} alt="logo" />
+                        <img src="https://vatanparvar.uz/Files/images/logo.gif" alt="logo" />
                     </NavLink>
                     <p dangerouslySetInnerHTML={{ __html: t("logo_header") }}>
                     </p>

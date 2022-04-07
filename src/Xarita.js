@@ -15,7 +15,6 @@ import {
 } from "react-yandex-maps";
 import "./Xarita.css"
 import person from "./boy.png";
-import person1 from './components/home/assets/placeHolder.png'
 import { Modal } from "./components/ui/Modal";
 import {HiOutlineLocationMarker, 
     HiMail,} from "react-icons/hi";
@@ -25,10 +24,10 @@ import {HiOutlineLocationMarker,
     import {  MdLanguage} from 'react-icons/md'
 
     import { MdAlternateEmail,} from 'react-icons/md'
-import logo from './components/home/assets/logo.gif'
+
 import http from "./components/ui/Services";
 import { useTranslation } from 'react-i18next';
-import { coorV } from "./M";
+
 // import { coorB } from "./F";
 import { colorA} from "./yandexmapKor";
 
@@ -162,7 +161,7 @@ setzoomA(2)
     <div className="mapR">
      {loader?<div className="loaderG">
       <div className="befG">
-  <img src={logo} alt="..."/>
+  <img src="https://vatanparvar.uz/Files/images/logo.gif" alt="..."/>
   </div>
   
   </div>
@@ -277,7 +276,7 @@ setzoomA(2)
                     geometry={user !== null ? user : []}
                     options={{
                       iconLayout: "default#image",
-                      iconImageHref: person,
+                      iconImageHref: {person},
                       iconImageSize: [40, 60],
                       iconImageOffset: [-1, -28],
                     }}
@@ -288,64 +287,7 @@ setzoomA(2)
                   />
                 </Clusterer>
               )}
-               {/* <Clusterer
-                  options={{
-                    groupByCoordinates: false,
-                  }}
-                >
-                  <Placemark
-                    key={-1}
-                    geometry={[41.328926, 69.280004]}
-                    options={{
-                      iconLayout: "default#image",
-                      iconImageHref: person1,
-                      iconImageSize: [50, 80],
-                      iconImageOffset: [-25, -90],
-                    }}
-                   
-                    modules={["geoObject.addon.hint"]}
-                  />
-                </Clusterer> */}
-                  {/* <GeoObject
-                 
-                 geometry={{
-                   type: "Polygon",
-                   coordinates: coorB,
-                   fillRule: 1,
-                 }}
-                 options={{
-                   fillColor: `#a19f9d`,
-                   strokeColor: "#000000",
-                   opacity: 0.5,
-                   strokeWidth: 5,
-                  
-                   iconLayout: "default#image",
-                 //   iconImageHref: pin,
-                   iconImageSize: [40, 40],
-                   hideIconOnBalloonOpen: false,
-                   balloonOffset: [3, -40],
-                 }}
-               /> */}
-                 {/* <GeoObject
-                 
-                 geometry={{
-                   type: "Polygon",
-                   coordinates: coorV,
-                   fillRule: 1,
-                 }}
-                 options={{
-                   fillColor: `rgba(251, 247, 241, 0)`,
-                   strokeColor: "#0000FF",
-                   opacity: 0.4,
-                   strokeWidth: 11,
-                  
-                   iconLayout: "default#image",
-                 //   iconImageHref: pin,
-                   iconImageSize: [40, 40],
-                   hideIconOnBalloonOpen: false,
-                   balloonOffset: [3, -40],
-                 }}
-               /> */}
+              
               
               <GeolocationControl options={{ float: "left" }} />
               <TypeSelector options={{ float: "right" }} />

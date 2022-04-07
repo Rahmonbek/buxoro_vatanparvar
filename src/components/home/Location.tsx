@@ -7,7 +7,6 @@ import {FiPhone} from "react-icons/fi";
 import {HiOutlineDocumentDownload} from "react-icons/hi";
 import {RiFacebookFill} from "react-icons/ri"
 import {BsInstagram} from "react-icons/bs"
-import person from './assets/placeHolder.png'
 import {FaTelegramPlane} from "react-icons/fa"
 import { YMaps, Map, Placemark, FullscreenControl, GeolocationControl, RouteButton, TrafficControl, ZoomControl, Clusterer} from 'react-yandex-maps';
 import { useTranslation } from 'react-i18next';
@@ -95,7 +94,7 @@ function Location() {
                     geometry={[data.length!==0?data[0][0].lat:0, data.length!==0?data[0][0].long:0]}
                     options={{
                       iconLayout: "default#image",
-                      iconImageHref: person,
+                      iconImageHref: "https://vatanparvar.uz/Files/images/placeHolder.png",
                       iconImageSize: [50, 80],
                       iconImageOffset: [-25, -90],
                     }}

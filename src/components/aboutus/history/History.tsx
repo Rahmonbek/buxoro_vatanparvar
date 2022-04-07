@@ -1,21 +1,8 @@
 import React, { useState } from "react";
 import { PageTitle } from "../../ui/PageTitle";
 import "./assets/history.scss";
-import img1 from "./assets/1.png";
-import img2 from "./assets/2.png";
-import img3 from "./assets/3.png";
-import img4 from "./assets/4.png";
-import img5 from "./assets/5.png";
-import img6 from "./assets/6.png";
-import img8 from "./assets/7.png";
-import img7 from "./assets/8.png";
-import logo from './assets/logo.gif'
 
-import Abduqahhorov from './assets/Abduqahhorov.png'
-import Batirov from './assets/Batirov.png'
-import Mamedov from './assets/Mamedov.png'
-import Niyazov from './assets/Niyazov.png'
-import Shaxmardonov from './assets/Shaxmardonov.png'
+
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -55,7 +42,7 @@ function History() {
     <div className="history" onLoad={()=>{loaderT()}}>
     {loader?<div className="loaderG">
     <div className="befG">
-<img src={logo} alt="..."/>
+<img src="https://vatanparvar.uz/static/media/logo.b738048fbb88a43a64ff.gif" alt="..."/>
 </div>
 
 </div>
@@ -80,7 +67,7 @@ function History() {
                 <div
                   className="swiper-slide_body"
                   style={{
-                    background: `url(${img8})center center no-repeat `,
+                    background: `url("https://vatanparvar.uz/Files/images/7.png"})center center no-repeat `,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
@@ -97,7 +84,7 @@ function History() {
                 <div
                   className="swiper-slide_body"
                   style={{
-                    background: `url(${img2}) center center no-repeat`,
+                    background: `url("https://vatanparvar.uz/Files/images/2.png"}) center center no-repeat`,
                     backgroundSize: "cover",
                   }}
                 >
@@ -114,7 +101,7 @@ function History() {
                 <div
                   className="swiper-slide_body"
                   style={{
-                    background: `url(${img3}) center center no-repeat`,
+                    background: `url("https://vatanparvar.uz/Files/images/3.png"}) center center no-repeat`,
                     backgroundSize: "cover",
                   }}
                 >
@@ -130,7 +117,7 @@ function History() {
                 <div
                   className="swiper-slide_body"
                   style={{
-                    background: `url(${img4}) center center no-repeat`,
+                    background: `url("https://vatanparvar.uz/Files/images/4.png"}) center center no-repeat`,
                     backgroundSize: "cover",
                   }}
                 >
@@ -146,7 +133,7 @@ function History() {
                 <div
                   className="swiper-slide_body"
                   style={{
-                    background: `url(${img5}) center center no-repeat`,
+                    background: `url("https://vatanparvar.uz/Files/images/5.png"}) center center no-repeat`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
@@ -163,7 +150,7 @@ function History() {
                 <div
                   className="swiper-slide_body"
                   style={{
-                    background: `url(${img6}) center center no-repeat`,
+                    background: `url("https://vatanparvar.uz/Files/images/6.png"}) center center no-repeat`,
                     backgroundSize: "cover",
                   }}
                 >
@@ -179,7 +166,7 @@ function History() {
                 <div
                   className="swiper-slide_body"
                   style={{
-                    background: `url(${img7}) center center no-repeat`,
+                    background: `url("https://vatanparvar.uz/Files/images/8.png"}) center center no-repeat`,
                     backgroundSize: "cover",
                   }}
                 >
@@ -195,7 +182,7 @@ function History() {
                 <div
                   className="swiper-slide_body"
                   style={{
-                    background: `url(${img1}) center center no-repeat`,
+                    background: `url("https://vatanparvar.uz/Files/images/1.png"}) center center no-repeat`,
                     backgroundSize: "cover",
                     backgroundPosition: "top",
                   }}
@@ -229,7 +216,7 @@ function History() {
 <Row style={{display:'flex', justifyContent:'center'}}>
 <Col lg={8} md={12} sm={24}>
 <div style={{padding:'10px'}}>
-                  <div className="hisRah" style={{backgroundImage:`url(${Shaxmardonov})`}}>
+                  <div className="hisRah" style={{backgroundImage:`url("https://vatanparvar.uz/Files/images/Shaxmardonov.png"})`}}>
                     <div className="hisBlack">
 <p className="kasb">{t("hisy")}</p>
 <h2 className="ism">{t("hisyI")}</h2>
@@ -241,7 +228,7 @@ function History() {
 </Col>
 <Col lg={8} md={12} sm={24}>
 <div style={{padding:'10px'}}>
-                  <div className="hisRah" style={{backgroundImage:`url(${Abduqahhorov})`}}>
+                  <div className="hisRah" style={{backgroundImage:`url("https://vatanparvar.uz/Files/images/Abduqahhorov.png"})`}}>
                     <div className="hisBlack">
 <p className="kasb">{t("hisi")}</p>
 <h2 className="ism">{t("hisiI")}</h2>
@@ -253,7 +240,7 @@ function History() {
   </Col>
   <Col lg={8} md={12} sm={24}>
 <div style={{padding:'10px'}}>
-                  <div className="hisRah" style={{backgroundImage:`url(${Mamedov})`}}>
+                  <div className="hisRah" style={{backgroundImage:`url("https://vatanparvar.uz/Files/images/Mamedov.png"})`}}>
                     <div className="hisBlack">
 <p className="kasb">{t("hisp")}</p>
 <h2 className="ism">{t("hispI")}</h2>
@@ -265,7 +252,7 @@ function History() {
 </Col>
 <Col style={{marginTop:'-20px'}} lg={8} md={12} sm={24}>
 <div style={{padding:'10px'}}>
-                  <div className="hisRah" style={{backgroundImage:`url(${Niyazov})`}}>
+                  <div className="hisRah" style={{backgroundImage:`url("https://vatanparvar.uz/Files/images/Niyazov.png"})`}}>
                     <div className="hisBlack">
 <p className="kasb">{t("hish")}</p>
 <h2 className="ism">{t("hishI")}</h2>
@@ -277,7 +264,7 @@ function History() {
   </Col>
   <Col style={{marginTop:'-20px'}} lg={8} md={12} sm={24}>
 <div style={{padding:'10px'}}>
-                  <div className="hisRah" style={{backgroundImage:`url(${Batirov})`}}>
+                  <div className="hisRah" style={{backgroundImage:`url("https://vatanparvar.uz/Files/images/Batirov.png"})`}}>
                     <div className="hisBlack">
 <p className="kasb">{t("hisk")}</p>
 <h2 className="ism">{t("hiskI")}</h2>

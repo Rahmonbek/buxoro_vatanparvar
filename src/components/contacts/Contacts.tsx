@@ -8,7 +8,7 @@ import style from  "./assets/style.module.css";
 
 import { useTranslation } from 'react-i18next';
 import http from "../ui/Services";
-import logo from '../home/assets/logo.gif'
+
 import {Row, Col, Collapse, Tooltip} from 'antd'
 import { BsBank, BsBuilding,  BsEnvelope,  BsFillEnvelopeFill,  BsFillTelephoneFill,  BsPerson } from "react-icons/bs";
 import {  AiOutlineFieldNumber, AiOutlinePhone } from "react-icons/ai";
@@ -92,7 +92,7 @@ useEffect(()=>{
       
       {loader?<div className={style.loader}>
       <div className={style.bef}>
-      <img src={logo} alt="..."/>
+      <img src="https://vatanparvar.uz/Files/images/logo.gif" alt="..."/>
       </div>
       </div>
       :''}

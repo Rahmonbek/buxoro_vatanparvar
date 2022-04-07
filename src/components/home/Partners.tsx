@@ -1,10 +1,7 @@
 import React from 'react';
 import "./assets/partners.scss"
 import {PageTitle} from "../ui/PageTitle";
-import Gerb from "./assets/uzb1.png";
-import Mv from "./assets/mv.png";
-import Mg from "./assets/mg.png";
-import iiv from "./assets/iiv.png";
+
 import SwiperCore, {Navigation, Autoplay} from 'swiper';
 import "./assets/header-slider.scss"
 import {Swiper, SwiperSlide} from 'swiper/react';
@@ -42,7 +39,7 @@ export function Partners() {
 
                         <div className="swiper-slide_body">
                             <div className="slider-item_img">
-                                <img src={Mv} alt=""/>
+                                <img src="https://vatanparvar.uz/Files/images/mv.png" alt=""/>
                             </div>
                             <div>
                                 <p className='partNew'>{t('mv')}</p>
@@ -54,7 +51,7 @@ export function Partners() {
                        <Tooltip placement="top" title="milliygvardiya.uz">
                         <div className="swiper-slide_body">
                             <div className="slider-item_img">
-                                <img src={Mg} alt=""/>
+                                <img src="https://vatanparvar.uz/Files/images/mg.png" alt=""/>
                             </div>
                             <div>
                                 <p className='partNew'>{t('mg')}</p>
@@ -66,7 +63,7 @@ export function Partners() {
                        <Tooltip placement="top" title="iiv.uz">
                         <div className="swiper-slide_body">
                             <div className="slider-item_img">
-                                <img src={iiv} alt=""/>
+                                <img src="https://vatanparvar.uz/Files/images/iiv.png" alt=""/>
                             </div>
                             <div>
                                 <p className='partNew'>{t('iiv')}</p>
@@ -78,7 +75,7 @@ export function Partners() {
                        <Tooltip placement="top" title="yoshlar.gov.uz">
                         <div className="swiper-slide_body">
                             <div className="slider-item_img">
-                                <img src={Gerb} alt=""/>
+                                <img src="https://vatanparvar.uz/Files/images/uzb1.png" alt=""/>
                             </div>
                             <div>
                                 <p className='partNew'>{t('yi')}</p>
@@ -90,7 +87,7 @@ export function Partners() {
                        <Tooltip placement="top" title="minsport.uz">
                         <div className="swiper-slide_body">
                             <div className="slider-item_img">
-                                <img src={Gerb} alt=""/>
+                                <img src="https://vatanparvar.uz/Files/images/uzb1.png" alt=""/>
                             </div>
                             <div>
                                 <p className='partNew'>{t('os')}</p>

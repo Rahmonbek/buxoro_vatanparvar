@@ -3,8 +3,6 @@ import { PageTitle } from '../../ui/PageTitle';
 import "./assets/hamkorlik.scss";
 import "./assets/header-slider.scss"
 
-import logo1 from './assets/photo1.jpg'
-import logo from './assets/logo.gif'
 import { useTranslation } from 'react-i18next';
 import style from './assets/Coorparation.module.css'
 import { Image } from 'antd';
@@ -129,7 +127,7 @@ var idT=Number(id.split('/')[id.split('/').length-1])
       <div className="hamkorlik">
       {loader?<div className="loaderG">
       <div className="befG">
-  <img src={logo} alt="..."/>
+  <img src="https://vatanparvar.uz/Files/images/logo.gif" alt="..."/>
   </div>
   
   </div>

@@ -8,7 +8,7 @@ import { PageTitle } from '../../ui/PageTitle';
 import { useTranslation } from 'react-i18next';
 import { Image } from 'antd';
 import {Row, Col} from 'antd'
-import logo from './assets/logo.gif'
+
 
 import Pagination from '../../pagination/Pagination';
 import { AiFillRightCircle, AiOutlineEye } from 'react-icons/ai';
@@ -194,7 +194,7 @@ if(t('check')){
             </div>
             {loader?<div className="loader">
             <div className="bef">
-      <img src={logo} alt="..."/>
+      <img src="https://vatanparvar.uz/Files/images/logo.gif" alt="..."/>
       </div>
       
    </div>

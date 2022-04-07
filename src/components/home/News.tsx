@@ -7,10 +7,7 @@ import { useTranslation } from 'react-i18next';
 import http from '../ui/Services';
 import { region, url, urlV } from '../../host';
 import {Row, Col} from 'antd'
-import logo from './assets/logo.gif'
-import { ArrowRightOutlined } from '@ant-design/icons';
 import { AiFillRightCircle, AiOutlineEye } from 'react-icons/ai';
-import { BsFillCalendarDateFill } from 'react-icons/bs';
 import { FiCalendar } from 'react-icons/fi';
 
 export function News() {
@@ -65,7 +62,7 @@ f.push(b[i])
         <div className="news">
              {loader?<div className="loader">
             <div className="bef">
-      <img src={logo} alt="..."/>
+      <img src="https://vatanparvar.uz/Files/images/logo.gif" alt="..."/>
       </div>
    </div>
         :

@@ -6,7 +6,7 @@ import { FiPhone } from "react-icons/fi";
 import { FaRegCalendarCheck } from "react-icons/fa";
 import "../leaders/assets/rahbariyat.scss";
 import { Image } from 'antd';
-import logo from './assets/logo.gif'
+
 
 import { useTranslation } from 'react-i18next';
 import http from "../../ui/Services";
@@ -33,7 +33,7 @@ function Leaders() {
     <div className="rahbariyat" onLoad={()=>{loaderT()}}>
     {loader?<div className="loaderG">
     <div className="befG">
-<img src={logo} alt="..."/>
+<img src="https://vatanparvar.uz/Files/images/logo.gif" alt="..."/>
 </div>
 
 </div>

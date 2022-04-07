@@ -32,7 +32,7 @@ function Leaders() {
     <div className="rahbariyat" onLoad={()=>{loaderT()}}>
     {loader?<div className="loaderG">
     <div className="befG">
-<img src={logo} alt="..."/>
+<img src="https://vatanparvar.uz/Files/images/logo.gif" alt="..."/>
 </div>
 
 </div>

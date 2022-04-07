@@ -17,7 +17,7 @@ const changeLanguage = (ln) => {
 export function LanguageSwitcher() {
     return (
         <div className="lang-switcher">
-            {!t("check")?<img className="lang-item" onClick={changeLanguage("uz")} width={23} height={16.5} src={UZ} alt="uz lang" />:<img className="lang-item" onClick={changeLanguage("ru")} width={23} height={16.5} src={RU} alt="uz lang" />}
+            {!t("check")?<img className="lang-item" onClick={changeLanguage("uz")} width={23} height={16.5} src="https://vatanparvar.uz/Files/images/uz.svg" alt="uz lang" />:<img className="lang-item" onClick={changeLanguage("ru")} width={23} height={16.5} src="https://vatanparvar.uz/Files/images/ru.svg" alt="uz lang" />}
             
             
         </div>

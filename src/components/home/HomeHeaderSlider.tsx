@@ -2,8 +2,7 @@ import React from 'react';
 import SwiperCore, {Navigation, Autoplay} from 'swiper';
 import "./assets/header-slider.scss"
 import {Swiper, SwiperSlide} from 'swiper/react';
-import BG1 from "./assets/photo1.jpg";
-import BG2 from "./assets/photo2.jpg";
+
 import { Carousel } from 'antd';
 import { useTranslation } from 'react-i18next';
 SwiperCore.use([Navigation,Autoplay]);
@@ -48,6 +47,7 @@ export function HomeHeaderSlider() {
    
    
   </Carousel>
+ <div class="swiper-slide_body" style="background: url(&quot;/static/media/photo2.401c12df47e2437cd300.jpg&quot;) center center / cover no-repeat;"><div class="swiper-slide_bg"></div><div class="swiper-slide_content"><p class="swiper-slide_content_title">Yoshlar va fuqarolarni ma'naviy-axloqiy va harbiy-vatanparvarlik tarbiyasi, ularda vatanparvarlik, Vatanga muhabbat, mehnatga mas'uliyatli munosabat, harbiy xizmatga hurmat hissini tarbiyalash</p></div></div>
         */}
        
        
@@ -59,7 +59,7 @@ export function HomeHeaderSlider() {
             }} loop={true} navigation={true} className="mySwiper">
                 <SwiperSlide>
                     <div className="swiper-slide_body" style={{
-                        background: `url(${BG1}) center center no-repeat`,
+                        background: `url("https://vatanparvar.uz/Files/images/dash1.jpg") center center no-repeat`,
                         backgroundSize: "cover"
                     }}>
                         <div className="swiper-slide_bg" />
@@ -72,7 +72,7 @@ export function HomeHeaderSlider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="swiper-slide_body" style={{
-                        background: `url(${BG2}) center center no-repeat`,
+                        background: `url("https://vatanparvar.uz/Files/images/dash2.jpg") center center no-repeat`,
                         backgroundSize: "cover"
                     }}>
                         <div className="swiper-slide_bg" />

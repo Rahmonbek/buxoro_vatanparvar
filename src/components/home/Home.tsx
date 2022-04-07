@@ -6,7 +6,7 @@ import {Map} from "./Map";
 import {Statistic} from "./Statistic";
 import {Partners} from "./Partners";
 import Location from './Location';
-import logo from './assets/logo.gif'
+
 import style from  "../contacts/assets/style.module.css";
 
 import BounceLoader from "react-spinners/BounceLoader";
