@@ -24,6 +24,7 @@ function Leaders() {
   useEffect(()=>{
     http.get<any>(`/GetApi/GetBranchContactsByRegion/${regionI}/`)
         
+       
     .then((res) => {
       res.data.sort(function(a:any, b:any){
         if(a.branchName < b.branchName) { return -1; }
@@ -33,8 +34,6 @@ function Leaders() {
       setData(res.data); setTimeout(()=>{
       setLoader(false)
   }, 0) })
-    .catch(e => console.log(e))
-  },[])
   return (
     <Image.PreviewGroup>
     <div className="rahbariyat" onLoad={()=>{loaderT()}}>
