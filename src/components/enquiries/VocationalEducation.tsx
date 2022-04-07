@@ -164,7 +164,7 @@ setLoader(false)
     },});  
     setLoader(false)}
   )
- 
+  console.log('sdsddsdds')
   setfirstName(false)
   settext(false)
   setbirthDate(false)
@@ -484,11 +484,11 @@ setbirthDate(true)
        </Form.Item>
    
 
-    <Form.Item  data-placeholder={t("Avtomaktab nomi")}  className={`myFor ${schoolClass?"forPlace":''}  ${schoolF?"salom":''}`} name="branchId"  label=" "  tooltip={{ title: t("Avval tuman tanlang") , icon: <QuestionOutlined style={{color:'white'}} /> }} rules={[{ required: true, message: t("check")?`${t("Avtomaktab nomi")}${t("ni tanlashingiz shart")}`:`${t("ni tanlashingiz shart")} ${t("Avtomaktab nomi")}` }]} >
+    <Form.Item  data-placeholder={t("O'quv muassasa")}  className={`myFor ${schoolClass?"forPlace":''}  ${schoolF?"salom":''}`} name="branchId"  label=" "  tooltip={{ title: t("Avval tuman tanlang") , icon: <QuestionOutlined style={{color:'white'}} /> }} rules={[{ required: true, message: t("check")?`${t("O'quv muassasa")}${t("ni tanlashingiz shart")}`:`${t("ni tanlashingiz shart")} ${t("O'quv muassasa")}` }]} >
       <Select
       value={schooldata}
         className="border"
-        placeholder={!schoolClass?t("Avtomaktab nomi"):''}
+        placeholder={!schoolClass?t("O'quv muassasa"):''}
         style={{textTransform:'none'}}
         onChange={(value) => {  setSchoolF(false);  setBranchdata(null);setSchooldata(value);setSchoolClass(true);  setCategoryClass(false);setBranchL(true);}}
         disabled={schoolS} 

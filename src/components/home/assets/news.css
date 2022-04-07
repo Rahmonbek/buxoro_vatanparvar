@@ -57,6 +57,7 @@ font-size: 0.75em;
 font-family: 'Roboto';
 margin-top: 2em !important;position: relative;
 top:15px;
+text-transform: uppercase;
 width:calc(100% - 55px);
 line-height: 1.5em;
 }

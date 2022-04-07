@@ -1,10 +1,7 @@
 import React from 'react'
 import { useTranslation } from "react-i18next";
 import "./assets/acttivitypages.scss";
-import img from '../assets/activity-5.jpg';
-import { RiFacebookFill } from "react-icons/ri";
-import { BsInstagram } from "react-icons/bs";
-import { FaTelegramPlane } from "react-icons/fa";
+
 function Fifthpage() {
   const { t } = useTranslation();
   return (
@@ -15,10 +12,10 @@ function Fifthpage() {
             <p dangerouslySetInnerHTML={{ __html: t("activity-title5") }}></p>
           </div>
           <div className="activity-img">
-            <img src={img} alt="img" />
+            <img src="https://vatanparvar.uz/img/5.jpg" alt="img" />
           </div>
           <div className="activity-text">
-            <p dangerouslySetInnerHTML={{ __html: t("activity-text1") }}></p>
+            <p dangerouslySetInnerHTML={{ __html: t("activity-text5") }}></p>
           </div>
         
         </div>

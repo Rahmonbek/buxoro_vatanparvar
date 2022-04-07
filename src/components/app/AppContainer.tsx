@@ -29,6 +29,7 @@ import OnlineEnquiries from '../enquiries/OnlineEnquiries';
 import Error from './Error';
 import { api } from '../../host';
 import { Xarita } from '../../Xarita';
+import SixPage from '../home/activity/SixPage';
 
 
 export function AppContainer() {
@@ -56,11 +57,12 @@ export function AppContainer() {
                 <Route path="/onlayn-murojat" element={<OnlineEnquiries />} />
                 <Route path="/haydovchilik-maktabiga-yozilish" element={<ToDrivingSchool />} />
                 <Route path="/kasb-hunar-maktabiga-yozilish" element={<Kasbxunar />} />
-                <Route path="/avtotransport-vositalari-haydovchilar" element={<FirstPage />} />
-                <Route path="/bolalar-o'smirlar-va-chaqirilishga" element={<SecondPage />} />
-                <Route path="/yoshlar-va-fuqorolarni-manaviy-ahloqiy" element={<ThirdPage />} />
-                <Route path="/yoshlarga-va-fuqorolarga-mudofaa-sohasida" element={<FourthPage />} />
-                <Route path="/sportning-texnik-va-amaliy" element={<Fifthpage />} />
+                <Route path="/yoshlar-va-fuqarolarni-manaviy-axloqiy" element={<FirstPage />} />
+                <Route path="/sportning-texnik-va-amaliy-turlarini" element={<SecondPage />} />
+                <Route path="/bolalar-osmirlar-va-chaqiruvgacha" element={<ThirdPage />} />
+                <Route path="/yoshlar-va-fuqarolarni-mudofaa" element={<FourthPage />} />
+                <Route path="/avtomototransport-vositalari-haydovchilarini" element={<Fifthpage />} />
+                <Route path="/xalqaro-tashkilotlar-bilan-faol-hamkorlik-qilish" element={<SixPage />} />
                 <Route path="/xarita" element={<Xarita />} />
             </Routes></main>
             <AppFooter />

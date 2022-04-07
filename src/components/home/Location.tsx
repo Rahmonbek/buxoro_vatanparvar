@@ -27,7 +27,7 @@ function Location() {
      
      
                 a.push(res.data.filter((data: any) => data.regionId === region))
-               
+           
                 setData(a)})
             .catch(e => console.log(e))
     }
@@ -42,11 +42,11 @@ function Location() {
                 <div className="location-info">
                     <div className="location-info-address">
                         <a href="https://goo.gl/maps/WnKiD14WoYxDTAqL7" target="_blank"  className='iconn'><HiOutlineLocationMarker className="icon" size="2.1rem" color="#133165" cursor="pointer"/></a>
-                       <a href="https://goo.gl/maps/WnKiD14WoYxDTAqL7"  target="_blank" >{data.length!==0?t("check")?data[0][0].regionAdress:data[0][0].regionAdressRu:''} </a>  
+                       <a href="https://goo.gl/maps/WnKiD14WoYxDTAqL7"  target="_blank" >{data.length!==0?t("check")?data[0][0].regionAdress!==null?data[0][0].regionAdress:data[0][0].regionAdressRu:data[0][0].regionAdressRu!==null?data[0][0].regionAdressRu:data[0][0].regionAdress:''} </a>  
                     </div>
                     <div className="location-info-email">
                         <p key="icon" className='iconn'><AiOutlineMail className="icon" size="2.1rem" color="#133165" cursor="pointer"/></p>
-                        <a href={`mailto: ${data.length!==0?data[0][0].email:''}`}  key="email" className="email">{data.length!==0?data[0][0].email:''}</a>   
+                        <a href={`mailto: ${data.length!==0?data[0][0].email:''}`}  key="email" className="email">{data.length!==0?data[0][0].email:''}</a>  
                     </div>     
                     <div className="location-info-phone">
                         <div className="location-info-phone-icon">

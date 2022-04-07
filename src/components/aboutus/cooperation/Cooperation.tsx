@@ -142,7 +142,7 @@ var idT=Number(id.split('/')[id.split('/').length-1])
               slidesPerView={1}
               spaceBetween={30}
               autoplay={{
-                delay: 5000,
+                delay: 4000,
                 disableOnInteraction: false,
               }}
               loop={true}

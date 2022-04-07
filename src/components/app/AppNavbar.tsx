@@ -142,6 +142,9 @@ setisovv(false)
                                     <NavLink onClick={()=>{setFalse();setisActivetassarufidagi(true) }} className={isActivetassarufidagi?"active":''}  to="/filiallar"><a className="app_nav-list_link" dangerouslySetInnerHTML={{ __html: t("tassarufidagi_tashkilotlar") }}></a></NavLink>
                                 </li>
                                 <li className="app_nav-list_item" onClick={closeNavbar}>
+                            <NavLink onClick={()=>{setFalse();setisActivexarita(true) }} className={isActivexarita?"active":''}  to="/xarita"><a className="app_nav-list_link">{t('xarita')}</a></NavLink>
+                        </li>
+                                <li className="app_nav-list_item" onClick={closeNavbar}>
                             <NavLink onClick={()=>{setFalse();setisActivekantaktlar(true) }} className={isActivekantaktlar?"active":''}  to="/kontaktlar"><a className="app_nav-list_link">{t('kantaktlar')}</a></NavLink>
                         </li>
                        
@@ -162,9 +165,7 @@ setisovv(false)
                                 </li>
                             </ul>
                         </li>
-                        <li className="app_nav-list_item" onClick={closeNavbar}>
-                            <NavLink onClick={()=>{setFalse();setisActivexarita(true) }} className={isActivexarita?"active":''}  to="/xarita"><a className="app_nav-list_link">{t('xarita')}</a></NavLink>
-                        </li>
+                       
                         <div className="menu_lang-switcher">
                             <LanguageSwitcher />
                             <BsFillEyeFill style={{ marginLeft: "10px", fontSize: 20, color:"#133165", lineHeight: "100%" }} onClick={() => setShowVisionPanel(true)} />

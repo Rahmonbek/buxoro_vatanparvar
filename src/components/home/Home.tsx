@@ -21,7 +21,7 @@ const loaderT=()=>{
 }
     return (
         <div onLoad={()=>{loaderT()}}>
-            
+      
             <HomeHeaderSlider/>
             <Activity />
             <Statistic />

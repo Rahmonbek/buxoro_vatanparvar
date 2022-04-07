@@ -1,10 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "./assets/acttivitypages.scss";
-import img1 from "../assets/activity1.jpg";
-import { RiFacebookFill } from "react-icons/ri";
-import { BsInstagram } from "react-icons/bs";
-import { FaTelegramPlane } from "react-icons/fa";
+
 function FirstPage() {
   const { t } = useTranslation();
   return (
@@ -15,7 +12,7 @@ function FirstPage() {
             <p dangerouslySetInnerHTML={{ __html: t("activity-title1") }}></p>
           </div>
           <div className="activity-img">
-            <img src={img1} alt="img" />
+            <img src="https://vatanparvar.uz/img/1.jpg" alt="img" />
           </div>
           <div className="activity-text">
             <p dangerouslySetInnerHTML={{ __html: t("activity-text1") }}></p>

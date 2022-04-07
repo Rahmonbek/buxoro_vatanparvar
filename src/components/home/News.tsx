@@ -56,6 +56,9 @@ f.push(b[i])
     }
     useEffect(() => {
         getNews();
+        setTimeout(()=>{
+            setloader(false)
+        },5000)
     }, [])
     return (
 
