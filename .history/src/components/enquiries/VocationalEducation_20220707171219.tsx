@@ -28,7 +28,7 @@ import { useTranslation } from "react-i18next";
 import { Col, Row,  Tooltip  } from 'antd';
 import moment from 'moment';
 import { ToastBody } from 'react-bootstrap';
-import { region, regionA_nameRu, regionA_nameUz } from '../../host';
+import { region, regionA_nameUz } from '../../host';
 const layout = {
   labelCol: { span: 2 },
   wrapperCol: { span: 22 },

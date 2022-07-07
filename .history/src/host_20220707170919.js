@@ -190,36 +190,23 @@ window.location.href.indexOf('namangan.vatanparvar.uz')!==-1?"<strong>Наман
 window.location.href.indexOf('sirdaryo.vatanparvar.uz')!==-1?"<strong>СырдарьинскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
 "<strong>АндижанскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»";
 
-export const regionA_nameRu=window.location.href.indexOf('andijon.vatanparvar.uz')!==-1?"Андижанская область":
-window.location.href.indexOf('buxoro.vatanparvar.uz')!==-1?"Бухарская область":
-window.location.href.indexOf('fargona.vatanparvar.uz')!==-1?"Фергонская область":
-window.location.href.indexOf('qoraqalpoq.vatanparvar.uz')!==-1?"Республика Каракалпакстан":
-window.location.href.indexOf('qashqadaryo.vatanparvar.uz')!==-1?"Кашкадарьинская область":
+export const regionA_nameRu=window.location.href.indexOf('andijon.vatanparvar.uz')!==-1?"АндижанскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('buxoro.vatanparvar.uz')!==-1?"БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('fargona.vatanparvar.uz')!==-1?"ФерганскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('qoraqalpoq.vatanparvar.uz')!==-1?"СОВЕТ РЕСПУБЛИКИ КАРАКАЛПАКСТАН </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('qashqadaryo.vatanparvar.uz')!==-1?"КашкадарьинскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
 
-window.location.href.indexOf('xorazm.vatanparvar.uz')!==-1?"Хорезмская область":
-window.location.href.indexOf('samarqand.vatanparvar.uz')!==-1?"Самаркандская область":
-window.location.href.indexOf('surxondaryo.vatanparvar.uz')!==-1?"Сурхандарьинская область":
-window.location.href.indexOf('toshkent.vatanparvar.uz')!==-1?"город Ташкент":
-window.location.href.indexOf('toshvil.vatanparvar.uz')!==-1?"Ташкентская область":
+window.location.href.indexOf('xorazm.vatanparvar.uz')!==-1?"ХорезмскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('samarqand.vatanparvar.uz')!==-1?"СамаркандскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('surxondaryo.vatanparvar.uz')!==-1?"СурхандарьинскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('toshkent.vatanparvar.uz')!==-1?"ТАШКЕНТСКИЙ ГОРОДСКОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('toshvil.vatanparvar.uz')!==-1?"ТашкентскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
 
-window.location.href.indexOf('navoiy.vatanparvar.uz')!==-1?"Навоийская область":
-window.location.href.indexOf('jizzax.vatanparvar.uz')!==-1?"Джизакская область":
-window.location.href.indexOf('namangan.vatanparvar.uz')!==-1?"Наманганская область":
-window.location.href.indexOf('sirdaryo.vatanparvar.uz')!==-1?"Сырдарьинская область":
-"Андижанская область ";
-
-
-
-
-
-
-
-
-
-
-
-
-
+window.location.href.indexOf('navoiy.vatanparvar.uz')!==-1?"НавоийскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('jizzax.vatanparvar.uz')!==-1?"ДжизакскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('namangan.vatanparvar.uz')!==-1?"НаманганскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('sirdaryo.vatanparvar.uz')!==-1?"СырдарьинскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+"АндижанскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»";
 
 
 

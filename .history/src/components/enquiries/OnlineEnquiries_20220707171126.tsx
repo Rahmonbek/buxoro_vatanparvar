@@ -22,7 +22,7 @@ import { useEffect, useState } from "react";
 import { PageTitle } from "../ui/PageTitle";
 import { useTranslation } from "react-i18next";
 import { Col, Row ,  Tooltip } from 'antd';
-import { region, regionA_nameRu, regionA_nameUz } from '../../host';
+import { region } from '../../host';
 const layout = {
   labelCol: { span: 2 },
   wrapperCol: { span: 22 },
@@ -315,7 +315,7 @@ const checkOt=(value:any)=>{
         disabled={typeS} 
       >
         <Option value={0}>{t("Markaziy kengash")}</Option>
-        <Option value={region}>{t("check")?regionA_nameUz:regionA_nameRu}</Option>
+        <Option value={region}>{t("chek")}</Option>
        
       </Select>
     

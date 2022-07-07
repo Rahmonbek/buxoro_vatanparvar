@@ -154,7 +154,7 @@ window.location.href.indexOf('sirdaryo.vatanparvar.uz')!==-1?"O’ZBEKISTON RESP
 export const regionA_nameUz=window.location.href.indexOf('andijon.vatanparvar.uz')!==-1?"Andijon viloyati":
 window.location.href.indexOf('buxoro.vatanparvar.uz')!==-1?"Buxoro viloyati":
 window.location.href.indexOf('fargona.vatanparvar.uz')!==-1?"Fargona viloyati":
-window.location.href.indexOf('qoraqalpoq.vatanparvar.uz')!==-1?"Qoraqalpog'ston Respublikasi":
+window.location.href.indexOf('qoraqalpoq.vatanparvar.uz')!==-1?"Qoraqalpog'ston ":
 window.location.href.indexOf('qashqadaryo.vatanparvar.uz')!==-1?"Qashqadaryo viloyati":
 
 window.location.href.indexOf('xorazm.vatanparvar.uz')!==-1?"Xorazm viloyati":
@@ -168,8 +168,6 @@ window.location.href.indexOf('jizzax.vatanparvar.uz')!==-1?"Jizzax viloyati":
 window.location.href.indexOf('namangan.vatanparvar.uz')!==-1?"Namangan viloyati":
 window.location.href.indexOf('sirdaryo.vatanparvar.uz')!==-1?"Sirdaryo viloyati":
 "Andijon viloyati";
-
-
 
 
 export const region_nameRu=window.location.href.indexOf('andijon.vatanparvar.uz')!==-1?"<strong>АндижанскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
@@ -189,37 +187,6 @@ window.location.href.indexOf('jizzax.vatanparvar.uz')!==-1?"<strong>Джизак
 window.location.href.indexOf('namangan.vatanparvar.uz')!==-1?"<strong>НаманганскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
 window.location.href.indexOf('sirdaryo.vatanparvar.uz')!==-1?"<strong>СырдарьинскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
 "<strong>АндижанскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»";
-
-export const regionA_nameRu=window.location.href.indexOf('andijon.vatanparvar.uz')!==-1?"Андижанская область":
-window.location.href.indexOf('buxoro.vatanparvar.uz')!==-1?"Бухарская область":
-window.location.href.indexOf('fargona.vatanparvar.uz')!==-1?"Фергонская область":
-window.location.href.indexOf('qoraqalpoq.vatanparvar.uz')!==-1?"Республика Каракалпакстан":
-window.location.href.indexOf('qashqadaryo.vatanparvar.uz')!==-1?"Кашкадарьинская область":
-
-window.location.href.indexOf('xorazm.vatanparvar.uz')!==-1?"Хорезмская область":
-window.location.href.indexOf('samarqand.vatanparvar.uz')!==-1?"Самаркандская область":
-window.location.href.indexOf('surxondaryo.vatanparvar.uz')!==-1?"Сурхандарьинская область":
-window.location.href.indexOf('toshkent.vatanparvar.uz')!==-1?"город Ташкент":
-window.location.href.indexOf('toshvil.vatanparvar.uz')!==-1?"Ташкентская область":
-
-window.location.href.indexOf('navoiy.vatanparvar.uz')!==-1?"Навоийская область":
-window.location.href.indexOf('jizzax.vatanparvar.uz')!==-1?"Джизакская область":
-window.location.href.indexOf('namangan.vatanparvar.uz')!==-1?"Наманганская область":
-window.location.href.indexOf('sirdaryo.vatanparvar.uz')!==-1?"Сырдарьинская область":
-"Андижанская область ";
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

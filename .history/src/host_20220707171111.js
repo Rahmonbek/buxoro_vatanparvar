@@ -206,7 +206,7 @@ window.location.href.indexOf('navoiy.vatanparvar.uz')!==-1?"Навоийская
 window.location.href.indexOf('jizzax.vatanparvar.uz')!==-1?"Джизакская область":
 window.location.href.indexOf('namangan.vatanparvar.uz')!==-1?"Наманганская область":
 window.location.href.indexOf('sirdaryo.vatanparvar.uz')!==-1?"Сырдарьинская область":
-"Андижанская область ";
+"АндижанскИЙ ";
 
 
 

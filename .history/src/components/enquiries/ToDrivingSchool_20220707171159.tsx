@@ -28,7 +28,7 @@ import frFR from '../../../node_modules/antd/es/date-picker/locale/ru_RU'
   import { Col, Row,  Tooltip } from 'antd';
 import moment from 'moment';
 import { OverlayTrigger, ToastBody, } from 'react-bootstrap';
-import { region, regionA_nameRu, regionA_nameUz } from '../../host';
+import { region, regionA_nameUz } from '../../host';
   const layout = {
     labelCol: { span: 2 },
     wrapperCol: { span: 22 },
