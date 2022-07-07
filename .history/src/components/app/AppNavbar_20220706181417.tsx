@@ -72,7 +72,7 @@ setisovv(false)
                     <NavLink to={t("check")?"/":"/ru"} className="app_nav-logo">
                         <img src="https://vatanparvar.uz/Files/images/logo.gif" alt="logo" />
                     </NavLink>
-                    <p style={{textTransform:'uppercase'}} dangerouslySetInnerHTML={{ __html: t("check")?region_nameUz:region_nameUz }}>
+                    <p style={{textTransform:'uppercase'}} dangerouslySetInnerHTML={{ __html: t(check")?region_nameUz:region_nameUz }}>
                     </p>
                 </div>
                 <div className={`app_nav-links ${open && "open"}`}>

@@ -133,43 +133,35 @@ window.location.href.indexOf('sirdaryo.vatanparvar.uz')!==-1?1724:
 1703;
 export const urlImg="https://kadr.vatanparvar.uz/img/personal/"
 
-export const region_nameUz=window.location.href.indexOf('andijon.vatanparvar.uz')!==-1?"O’ZBEKISTON RESPUBLIKASI <br/> MUDOFAASIGA KO’MAKLASHUVCHI <br/> “VATANPARVAR” TASHKILOTI <br/> <strong>Andijon viloyati KENGASHI</strong>":
-window.location.href.indexOf('buxoro.vatanparvar.uz')!==-1?"O’ZBEKISTON RESPUBLIKASI <br/> MUDOFAASIGA KO’MAKLASHUVCHI <br/> “VATANPARVAR” TASHKILOTI <br/> <strong>Buxoro viloyati KENGASHI</strong>":
-window.location.href.indexOf('fargona.vatanparvar.uz')!==-1?"O’ZBEKISTON RESPUBLIKASI <br/> MUDOFAASIGA KO’MAKLASHUVCHI <br/> “VATANPARVAR” TASHKILOTI <br/> <strong>Fargona viloyati KENGASHI</strong>":
-window.location.href.indexOf('qoraqalpoq.vatanparvar.uz')!==-1?"O’ZBEKISTON RESPUBLIKASI <br/> MUDOFAASIGA KO’MAKLASHUVCHI <br/> “VATANPARVAR” TASHKILOTI <br/> <strong>QORAQALPOG'ISTON RESPUBLIKASI KENGASHI</strong>":
-window.location.href.indexOf('qashqadaryo.vatanparvar.uz')!==-1?"O’ZBEKISTON RESPUBLIKASI <br/> MUDOFAASIGA KO’MAKLASHUVCHI <br/> “VATANPARVAR” TASHKILOTI <br/> <strong>Qashqadaryo viloyati KENGASHI</strong>":
+export const region_nameUz=window.location.href.indexOf('andijon.vatanparvar.uz')!==-1?"Andijon viloyati":
+window.location.href.indexOf('buxoro.vatanparvar.uz')!==-1?"Buxoro viloyati":
+window.location.href.indexOf('fargona.vatanparvar.uz')!==-1?"Fargona viloyati":
+window.location.href.indexOf('qoraqalpoq.vatanparvar.uz')!==-1?"Qoraqalpoq viloyati":
+window.location.href.indexOf('qashqadaryo.vatanparvar.uz')!==-1?"qashqadaryo viloyati":
 
-window.location.href.indexOf('xorazm.vatanparvar.uz')!==-1?"O’ZBEKISTON RESPUBLIKASI <br/> MUDOFAASIGA KO’MAKLASHUVCHI <br/> “VATANPARVAR” TASHKILOTI <br/> <strong>Xorazm viloyati KENGASHI</strong>":
-window.location.href.indexOf('samarqand.vatanparvar.uz')!==-1?"O’ZBEKISTON RESPUBLIKASI <br/> MUDOFAASIGA KO’MAKLASHUVCHI <br/> “VATANPARVAR” TASHKILOTI <br/> <strong>Samarqand viloyati KENGASHI</strong>":
-window.location.href.indexOf('surxondaryo.vatanparvar.uz')!==-1?"O’ZBEKISTON RESPUBLIKASI <br/> MUDOFAASIGA KO’MAKLASHUVCHI <br/> “VATANPARVAR” TASHKILOTI <br/> <strong>Surxondaryo viloyati KENGASHI</strong>":
-window.location.href.indexOf('toshkent.vatanparvar.uz')!==-1?"O’ZBEKISTON RESPUBLIKASI <br/> MUDOFAASIGA KO’MAKLASHUVCHI <br/> “VATANPARVAR” TASHKILOTI <br/> <strong>Toshkent shahri KENGASHI</strong>":
-window.location.href.indexOf('toshvil.vatanparvar.uz')!==-1?"O’ZBEKISTON RESPUBLIKASI <br/> MUDOFAASIGA KO’MAKLASHUVCHI <br/> “VATANPARVAR” TASHKILOTI <br/> <strong>Toshkent viloyati KENGASHI</strong>":
+window.location.href.indexOf('xorazm.vatanparvar.uz')!==-1?"xorazm viloyati":
+window.location.href.indexOf('samarqand.vatanparvar.uz')!==-1?"samarqand viloyati":
+window.location.href.indexOf('surxondaryo.vatanparvar.uz')!==-1?"surxondaryo viloyati":
+window.location.href.indexOf('toshkent.vatanparvar.uz')!==-1?"toshkent viloyati":
+window.location.href.indexOf('toshvil.vatanparvar.uz')!==-1?"toshvil viloyati":
 
-window.location.href.indexOf('navoiy.vatanparvar.uz')!==-1?"O’ZBEKISTON RESPUBLIKASI <br/> MUDOFAASIGA KO’MAKLASHUVCHI <br/> “VATANPARVAR” TASHKILOTI <br/> <strong>Navoiy viloyati KENGASHI</strong>":
-window.location.href.indexOf('jizzax.vatanparvar.uz')!==-1?"O’ZBEKISTON RESPUBLIKASI <br/> MUDOFAASIGA KO’MAKLASHUVCHI <br/> “VATANPARVAR” TASHKILOTI <br/> <strong>Jizzax viloyati KENGASHI</strong>":
-window.location.href.indexOf('namangan.vatanparvar.uz')!==-1?"O’ZBEKISTON RESPUBLIKASI <br/> MUDOFAASIGA KO’MAKLASHUVCHI <br/> “VATANPARVAR” TASHKILOTI <br/> <strong>Namangan viloyati KENGASHI</strong>":
-window.location.href.indexOf('sirdaryo.vatanparvar.uz')!==-1?"O’ZBEKISTON RESPUBLIKASI <br/> MUDOFAASIGA KO’MAKLASHUVCHI <br/> “VATANPARVAR” TASHKILOTI <br/> <strong>Sirdaryo viloyati KENGASHI</strong>":
-"O’ZBEKISTON RESPUBLIKASI <br/> MUDOFAASIGA KO’MAKLASHUVCHI <br/> “VATANPARVAR” TASHKILOTI <br/> <strong>Andijon viloyati KENGASHI</strong>";
+window.location.href.indexOf('navoiy.vatanparvar.uz')!==-1?"navoiy viloyati":
+window.location.href.indexOf('jizzax.vatanparvar.uz')!==-1?"jizzax viloyati":
+window.location.href.indexOf('namangan.vatanparvar.uz')!==-1?"namangan viloyati":
+window.location.href.indexOf('sirdaryo.vatanparvar.uz')!==-1?"sirdaryo viloyati":
+"buxoro viloyati";
 
-
-export const region_nameRu=window.location.href.indexOf('andijon.vatanparvar.uz')!==-1?"<strong>АндижанскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('buxoro.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('fargona.vatanparvar.uz')!==-1?"<strong>ФерганскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('qoraqalpoq.vatanparvar.uz')!==-1?"<strong>СОВЕТ РЕСПУБЛИКИ КАРАКАЛПАКСТАН </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('qashqadaryo.vatanparvar.uz')!==-1?"<strong>КашкадарьинскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-
-window.location.href.indexOf('xorazm.vatanparvar.uz')!==-1?"<strong>ХорезмскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('samarqand.vatanparvar.uz')!==-1?"<strong>СамаркандскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('surxondaryo.vatanparvar.uz')!==-1?"<strong>СурхандарьинскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('toshkent.vatanparvar.uz')!==-1?"<strong>ТАШКЕНТСКИЙ ГОРОДСКОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('toshvil.vatanparvar.uz')!==-1?"<strong>ТашкентскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-
-window.location.href.indexOf('navoiy.vatanparvar.uz')!==-1?"<strong>НавоийскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('jizzax.vatanparvar.uz')!==-1?"<strong>ДжизакскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('namangan.vatanparvar.uz')!==-1?"<strong>НаманганскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('sirdaryo.vatanparvar.uz')!==-1?"<strong>СырдарьинскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-"<strong>АндижанскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»";
-
-
-
-
+// andijon.vatanparvar.uz
+// buxoro.vatanparvar.uz
+// fargona.vatanparvar.uz
+// qoraqalpoq.vatanparvar.uz
+// qashqadaryo.vatanparvar.uz
+// xorazm.vatanparvar.uz
+// samarqand.vatanparvar.uz
+// surxondaryo.vatanparvar.uz
+// toshkent.vatanparvar.uz
+// toshvil.vatanparvar.uz
+// navoiy.vatanparvar.uz
+// jizzax.vatanparvar.uz
+// namangan.vatanparvar.uz
+// sirdaryo.vatanparvar.uz

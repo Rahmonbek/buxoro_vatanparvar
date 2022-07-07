@@ -152,24 +152,44 @@ window.location.href.indexOf('sirdaryo.vatanparvar.uz')!==-1?"O’ZBEKISTON RESP
 "O’ZBEKISTON RESPUBLIKASI <br/> MUDOFAASIGA KO’MAKLASHUVCHI <br/> “VATANPARVAR” TASHKILOTI <br/> <strong>Andijon viloyati KENGASHI</strong>";
 
 
-export const region_nameRu=window.location.href.indexOf('andijon.vatanparvar.uz')!==-1?"<strong>АндижанскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+export const region_nameRu=window.location.href.indexOf('andijon.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
 window.location.href.indexOf('buxoro.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('fargona.vatanparvar.uz')!==-1?"<strong>ФерганскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('qoraqalpoq.vatanparvar.uz')!==-1?"<strong>СОВЕТ РЕСПУБЛИКИ КАРАКАЛПАКСТАН </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('qashqadaryo.vatanparvar.uz')!==-1?"<strong>КашкадарьинскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('fargona.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('qoraqalpoq.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('qashqadaryo.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
 
-window.location.href.indexOf('xorazm.vatanparvar.uz')!==-1?"<strong>ХорезмскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('samarqand.vatanparvar.uz')!==-1?"<strong>СамаркандскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('surxondaryo.vatanparvar.uz')!==-1?"<strong>СурхандарьинскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('toshkent.vatanparvar.uz')!==-1?"<strong>ТАШКЕНТСКИЙ ГОРОДСКОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('toshvil.vatanparvar.uz')!==-1?"<strong>ТашкентскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('xorazm.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('samarqand.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('surxondaryo.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('toshkent.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('toshvil.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
 
-window.location.href.indexOf('navoiy.vatanparvar.uz')!==-1?"<strong>НавоийскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('jizzax.vatanparvar.uz')!==-1?"<strong>ДжизакскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('namangan.vatanparvar.uz')!==-1?"<strong>НаманганскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('sirdaryo.vatanparvar.uz')!==-1?"<strong>СырдарьинскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-"<strong>АндижанскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»";
-
-
+window.location.href.indexOf('navoiy.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('jizzax.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('namangan.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('sirdaryo.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»";
 
 
+
+
+Ташкент
+14	Республика Каракалпакстан
+2	Андижанская область
+3	Бухарская область
+5	Джизакская область
+8	Кашкадарьинская
+7	Навоийская область
+6	Наманганская область
+9	Самаркандская область	Samarqand viloyati
+Самарқанд вилояти	3798,7	16,4	Самарканд	37593,9
+11	Сурхандарьинская область	Surxondaryo viloyati
+Сурхондарё вилояти	2569,3	20,8	Термез	22349,3
+10	Сырдарьинская область	Sirdaryo viloyati
+Сирдарё вилояти	829,7	5,1	Гулистан	10477,7
+12	Ташкентская область	Toshkent viloyati
+Тошкент вилояти	2898,7	15,3	Нурафшон	50117,8
+4	Ферганская область	Farg’ona viloyati
+Фарғона вилояти	3683,1	6,8	Фергана	32943,3
+13	Хорезмская область	Xorazm viloyati
+Хоразм вилояти	1835,5	6,3	Ургенч	19136,5

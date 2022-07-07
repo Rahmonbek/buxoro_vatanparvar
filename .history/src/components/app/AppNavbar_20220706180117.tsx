@@ -9,7 +9,6 @@ import { NavLink } from "react-router-dom";
 import { SettingsModal } from '@n3/react-vision-panel';
 import { BsFillEyeFill } from "react-icons/bs";
 import { useTranslation } from 'react-i18next';
-import { region_nameUz } from '../../host';
 
 export function AppNavbar() {
     const [open, setOpen] = useState(false);
@@ -59,6 +58,16 @@ setismurojat_qilish(false)
 setisovv(false)
 }
 
+
+
+
+
+
+
+
+
+
+
   
     const { t } = useTranslation();
     const closeNavbar = () => {
@@ -72,7 +81,7 @@ setisovv(false)
                     <NavLink to={t("check")?"/":"/ru"} className="app_nav-logo">
                         <img src="https://vatanparvar.uz/Files/images/logo.gif" alt="logo" />
                     </NavLink>
-                    <p style={{textTransform:'uppercase'}} dangerouslySetInnerHTML={{ __html: t("check")?region_nameUz:region_nameUz }}>
+                    <p dangerouslySetInnerHTML={{ __html: region }}>
                     </p>
                 </div>
                 <div className={`app_nav-links ${open && "open"}`}>

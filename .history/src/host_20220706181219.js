@@ -162,14 +162,28 @@ window.location.href.indexOf('xorazm.vatanparvar.uz')!==-1?"<strong>Хорезм
 window.location.href.indexOf('samarqand.vatanparvar.uz')!==-1?"<strong>СамаркандскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
 window.location.href.indexOf('surxondaryo.vatanparvar.uz')!==-1?"<strong>СурхандарьинскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
 window.location.href.indexOf('toshkent.vatanparvar.uz')!==-1?"<strong>ТАШКЕНТСКИЙ ГОРОДСКОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('toshvil.vatanparvar.uz')!==-1?"<strong>ТашкентскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('toshvil.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
 
-window.location.href.indexOf('navoiy.vatanparvar.uz')!==-1?"<strong>НавоийскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('jizzax.vatanparvar.uz')!==-1?"<strong>ДжизакскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('namangan.vatanparvar.uz')!==-1?"<strong>НаманганскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-window.location.href.indexOf('sirdaryo.vatanparvar.uz')!==-1?"<strong>СырдарьинскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
-"<strong>АндижанскИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»";
-
-
+window.location.href.indexOf('navoiy.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('jizzax.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('namangan.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+window.location.href.indexOf('sirdaryo.vatanparvar.uz')!==-1?"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»":
+"<strong>БУХАРСКИЙ ОБЛАСТНОЙ СОВЕТ </strong><br/> ОРГАНИЗАЦИИ СОДЕЙСТВИЯ <br/> ОБОРОНЕ РЕСПУБЛИКИ <br/> УЗБЕКИСТАН «ВАТАНПАРВАР»";
 
 
+
+
+Ташкент
+Республика Каракалпакстан
+Андижанск
+Бухарск
+Джизакск
+Кашкадарьинск
+Навоийск
+Наманганск
+Самаркандск
+Сурхандарьинск
+Сырдарьинск
+Ташкентск
+Ферганск
+Хорезмск
